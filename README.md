@@ -8,7 +8,7 @@ The `./bin` directory contains `pdtrav` (static executable), plus `runlim` (a pr
 ```
 ./runs
 ```
-the runs directory holds two bash scripts conceived to run pdtrav on a set of benchmarks from the `./aig` directory.
+the `./runs` directory holds two bash scripts conceived to run pdtrav on a set of benchmarks from the `./aig` directory.
 In order to check that everything works, we suggest:
 
 ```
