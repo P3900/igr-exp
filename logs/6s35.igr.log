@@ -1,0 +1,1536 @@
+c ## Tool Version: PdTRAV 3.5.0
+c ## DD Version: Cudd-2.5.0
+c ## Compile Date: sab 26 mar 2022, 12.00.22, CET
+c ## Command: pdt40 -strategy igra3ie -itpAigCore 1000 -itpCore 1000 -verbosity 4 -igrSide 0 -satTimeLimit 300 -itpDrup 3 6s35.aig 
+## Running Date: Sun Jul 17 09:25:06 2022
+## Hostname: fmccpu
+CPU time adjustment: 0.74 s (norm 0.58 s) - scale factor: 1.280000
+-- DDI Manager Init.
+-- FSM Manager Init.
+-- FSM Loading.
+(Loading File 6s35.aig).
+Property: !o0.
+Design Statistics: 77 Inputs / 1572 State Vars / 11254 delta AIG Gates / 5 lambda AIG Gates
+|Constraint|=0 nodes.
+|Property|=5 nodes.
+|Constraint|=0 nodes.
+-- FSM Manager Init.
+Warning: l568 has Constant Input with Different Init Value.
+Found 1 Peripheral Latches (1 1 s.) - 1572 Latches Remaining.
+  Peripheral Latch Reduction; Delta Size: 11260 -> 11253.
+Found 0 Peripheral Latches (0 1 s.) - 1572 Latches Remaining.
+  Peripheral Latch Reduction; Delta Size: 11253 -> 11253.
+compacting deltas (EQ prop): 11248 -> 11246
+compacting miters (EQ prop): 2 -> 2
+Checking for Equivalence Property: OK (1/1 Equivalences Found).
+-- TRAV Manager Init.
+COI Reduction Performed: Kept 1573 State Vars out of 1573.
+Original Delta: Size=11253; #Partitions=1573.
+Reduced Delta: Size=11253; #Partitions=1573.
+Original Delta: Size=11253; #Partitions=1573.
+Original Delta: Size=11253; #Partitions=1573.
+Ternary Simulation: (2557)(2265)(1991)(1963)(1939)(1679)(1419)(1399)(1379)(1363)(1347)(1337)(1329)(1321)(1313)(1305)(1297)(1289)(1281)(1273)(1265)(1257)(1249)(1241)(1233)(1225)(1217)(1209)(1201)(1193)(1185)(1177)(1169)(1161)(1153)(1145)(1137)(1129)(1121)(1113)(1105)(1097)(1081)(1065)(1057)(1049)(1041)(1033)(1025)(1017)(961)(905)(885)(865)(703)(545)(541)(537)(529)(521)(517)(513)(265)(17)(11)(5)(3)(1)(1)(1)TSIM found 1 EQUIVALENCES
+Original Delta: Size=11252; #Partitions=1573.
+
+Ternary Simulation Performed: 70 iterations in 0.06 s; |R|=33053.
+COI Reduction Performed: Kept 1573 State Vars out of 1573.
+Original Delta: Size=11252; #Partitions=1573.
+Reduced Delta: Size=11252; #Partitions=1573.
+Circuit AIG stats: 77 inp / 1573 state vars / 11252 AIG gates.
+Reduction run time: 0.1.
+Invarspec: 3.
+Init: 0.
+1 stalled latches found
+STEP: 0.
+lazyRate: 1.000000 - itpOpt: 0 - optLevel: 1.
+Using bwd cone at bound 0 (cone(aux): 3(0) - care: 0).
+{COI: 1} curr NODE ID: 164153, baig Nodes: 49821.
+ BMC (AIG size: 0/3/3) Full Cone (Aux): 3(0))
+Interpolant FINITE RUN: cone=3, care=0.
+fp chkTime: 0.01 s (norm 0.01 s)
+  Aig interpolant inner iteration 0: |from:3621| -> ternary to+: 2875
+TO+IMG-cube: 1438 (f:3621->745)
+FOUND 68(0 const) EQUIVALENCES - size 745 -> 468
+computing interpolant in TO+
+TO: 3265 (supp: 1568) - AIG nodes 53496
+TO*TO+: 4703 (supp: 1568)
+|to:4703|.
+   |tr|=3619 |reached|=4703.
+*** Trav time: 0.96 s (norm 0.75 s) ***
+ring 1 - safe for bound 0
+fp chkTime: 0.03 s (norm 0.03 s)
+  Aig interpolant inner iteration 1: |from:7755| -> ternary to+: 2611
+TO+IMG-cube: 1306 (f:7755->5143)
+FOUND 132(0 const) EQUIVALENCES - size 5143 -> 4998
+computing interpolant in TO+
+TO: 3388 (supp: 1563) - AIG nodes 59808
+TO*TO+: 4694 (supp: 1563)
+|to:4694|.
+   |tr|=19026 |reached|=7519.
+*** Trav time: 2.06 s (norm 1.61 s) ***
+ring 2 - safe for bound 0
+fp chkTime: 0.06 s (norm 0.05 s)
+  Aig interpolant inner iteration 2: |from:8798| -> ternary to+: 2339
+TO+IMG-cube: 1170 (f:8798->6458)
+FOUND 204(0 const) EQUIVALENCES - size 6458 -> 6223
+computing interpolant in TO+
+TO: 3531 (supp: 1562) - AIG nodes 62571
+TO*TO+: 4701 (supp: 1562)
+|to:4701|.
+   |tr|=19026 |reached|=10260.
+*** Trav time: 3.35 s (norm 2.62 s) ***
+ring 3 - safe for bound 0
+fp chkTime: 0.10 s (norm 0.08 s)
+  Aig interpolant inner iteration 3: |from:9755| -> ternary to+: 2071
+TO+IMG-cube: 1036 (f:9755->7683)
+FOUND 273(0 const) EQUIVALENCES - size 7683 -> 7410
+computing interpolant in TO+
+TO: 3665 (supp: 1561) - AIG nodes 67461
+TO*TO+: 4701 (supp: 1561)
+|to:4701|.
+   |tr|=19026 |reached|=6818.
+*** Trav time: 4.57 s (norm 3.57 s) ***
+ring 4 - safe for bound 0
+fp chkTime: 0.05 s (norm 0.04 s)
+  Aig interpolant inner iteration 4: |from:10777| -> ternary to+: 2015
+TO+IMG-cube: 1008 (f:10777->8760)
+FOUND 291(0 const) EQUIVALENCES - size 8760 -> 8436
+computing interpolant in TO+
+TO: 3697 (supp: 1560) - AIG nodes 69626
+TO*TO+: 4705 (supp: 1560)
+|to:4705|.
+   |tr|=19026 |reached|=9341.
+*** Trav time: 5.44 s (norm 4.25 s) ***
+ring 5 - safe for bound 0
+fp chkTime: 0.06 s (norm 0.05 s)
+  Aig interpolant inner iteration 5: |from:10977| -> ternary to+: 1963
+TO+IMG-cube: 982 (f:10977->9013)
+FOUND 306(0 const) EQUIVALENCES - size 9013 -> 8706
+computing interpolant in TO+
+TO: 3722 (supp: 1559) - AIG nodes 72106
+TO*TO+: 4704 (supp: 1559)
+|to:4704|.
+   |tr|=19026 |reached|=11832.
+*** Trav time: 6.50 s (norm 5.07 s) ***
+ring 6 - safe for bound 0
+fp chkTime: 0.07 s (norm 0.06 s)
+  Aig interpolant inner iteration 6: |from:11766| -> ternary to+: 1703
+TO+IMG-cube: 852 (f:11766->10062)
+FOUND 366(2 const) EQUIVALENCES - size 10062 -> 9689
+min/avg/max red id: 80/81/83
+FOUND 2 const REDUNDANCIES
+red size: 6 - F size 93 -> 93
+computing interpolant in TO+
+TO: 3830 (supp: 1558) - AIG nodes 76754
+TO*TO+: 4682 (supp: 1558)
+|to:4682|.
+   |tr|=19026 |reached|=7903.
+*** Trav time: 8.02 s (norm 6.27 s) ***
+ring 7 - safe for bound 0
+fp chkTime: 0.22 s (norm 0.17 s)
+  Aig interpolant inner iteration 7: |from:12642| -> ternary to+: 1447
+TO+IMG-cube: 724 (f:12642->11194)
+FOUND 428(2 const) EQUIVALENCES - size 11194 -> 10759
+computing interpolant in TO+
+TO: 3959 (supp: 1557) - AIG nodes 78178
+TO*TO+: 4683 (supp: 1557)
+|to:4683|.
+   |tr|=19026 |reached|=10042.
+*** Trav time: 9.51 s (norm 7.43 s) ***
+ring 8 - safe for bound 0
+fp chkTime: 0.11 s (norm 0.09 s)
+  Aig interpolant inner iteration 8: |from:13313| -> ternary to+: 1435
+TO+IMG-cube: 718 (f:13313->11877)
+FOUND 430(2 const) EQUIVALENCES - size 11877 -> 11441
+computing interpolant in TO+
+TO: 3962 (supp: 1557) - AIG nodes 80151
+TO*TO+: 4680 (supp: 1557)
+|to:4680|.
+   |tr|=19026 |reached|=12175.
+*** Trav time: 11.28 s (norm 8.81 s) ***
+ring 9 - safe for bound 0
+fp chkTime: 0.49 s (norm 0.38 s)
+  Aig interpolant inner iteration 9: |from:13349| -> ternary to+: 1423
+TO+IMG-cube: 712 (f:13349->11925)
+FOUND 432(2 const) EQUIVALENCES - size 11925 -> 11487
+computing interpolant in TO+
+TO: 3965 (supp: 1557) - AIG nodes 85356
+TO*TO+: 4677 (supp: 1557)
+|to:4677|.
+   |tr|=19026 |reached|=9263.
+*** Trav time: 14.15 s (norm 11.05 s) ***
+ring 10 - safe for bound 0
+fp chkTime: 0.15 s (norm 0.12 s)
+  Aig interpolant inner iteration 10: |from:13392| -> ternary to+: 1411
+TO+IMG-cube: 706 (f:13392->11980)
+FOUND 434(2 const) EQUIVALENCES - size 11980 -> 11540
+computing interpolant in TO+
+TO: 3971 (supp: 1557) - AIG nodes 85460
+TO*TO+: 4677 (supp: 1557)
+|to:4677|.
+   |tr|=19026 |reached|=11603.
+*** Trav time: 15.88 s (norm 12.40 s) ***
+ring 11 - safe for bound 0
+fp chkTime: 0.08 s (norm 0.07 s)
+  Aig interpolant inner iteration 11: |from:13434| -> ternary to+: 1399
+TO+IMG-cube: 700 (f:13434->12034)
+FOUND 436(2 const) EQUIVALENCES - size 12034 -> 11592
+computing interpolant in TO+
+TO: 3975 (supp: 1557) - AIG nodes 87653
+TO*TO+: 4675 (supp: 1557)
+|to:4675|.
+   |tr|=19026 |reached|=13780.
+*** Trav time: 17.67 s (norm 13.80 s) ***
+ring 12 - safe for bound 0
+fp chkTime: 0.17 s (norm 0.13 s)
+  Aig interpolant inner iteration 12: |from:13473| -> ternary to+: 1389
+TO+IMG-cube: 695 (f:13473->12083)
+FOUND 438(3 const) EQUIVALENCES - size 12083 -> 11636
+computing interpolant in TO+
+TO: 3988 (supp: 1557) - AIG nodes 93300
+TO*TO+: 4683 (supp: 1557)
+|to:4683|.
+   |tr|=19026 |reached|=10283.
+*** Trav time: 19.99 s (norm 15.61 s) ***
+ring 13 - safe for bound 0
+fp chkTime: 0.08 s (norm 0.07 s)
+  Aig interpolant inner iteration 13: |from:13510| -> ternary to+: 1381
+TO+IMG-cube: 691 (f:13510->12128)
+FOUND 439(3 const) EQUIVALENCES - size 12128 -> 11680
+computing interpolant in TO+
+TO: 3986 (supp: 1557) - AIG nodes 92331
+TO*TO+: 4677 (supp: 1557)
+|to:4677|.
+   |tr|=19026 |reached|=12334.
+*** Trav time: 21.82 s (norm 17.04 s) ***
+ring 14 - safe for bound 0
+fp chkTime: 0.18 s (norm 0.14 s)
+  Aig interpolant inner iteration 14: |from:13535| -> ternary to+: 1373
+TO+IMG-cube: 687 (f:13535->12161)
+FOUND 439(1 const) EQUIVALENCES - size 12161 -> 11719
+computing interpolant in TO+
+TO: 3992 (supp: 1557) - AIG nodes 94230
+TO*TO+: 4679 (supp: 1557)
+|to:4679|.
+   |tr|=19026 |reached|=14333.
+*** Trav time: 23.65 s (norm 18.47 s) ***
+ring 15 - safe for bound 0
+fp chkTime: 0.62 s (norm 0.48 s)
+  Aig interpolant inner iteration 15: |from:13578| -> ternary to+: 1361
+TO+IMG-cube: 681 (f:13578->12216)
+FOUND 441(1 const) EQUIVALENCES - size 12216 -> 11772
+computing interpolant in TO+
+TO: 3998 (supp: 1557) - AIG nodes 96227
+TO*TO+: 4679 (supp: 1557)
+|to:4679|.
+   |tr|=19026 |reached|=16415.
+*** Trav time: 25.92 s (norm 20.24 s) ***
+ring 16 - safe for bound 0
+fp chkTime: 0.16 s (norm 0.12 s)
+  Aig interpolant inner iteration 16: |from:13662| -> ternary to+: 1345
+TO+IMG-cube: 673 (f:13662->12316)
+FOUND 444(1 const) EQUIVALENCES - size 12316 -> 11869
+computing interpolant in TO+
+TO: 4002 (supp: 1557) - AIG nodes 103067
+TO*TO+: 4675 (supp: 1557)
+|to:4675|.
+   |tr|=19026 |reached|=12081.
+*** Trav time: 28.54 s (norm 22.29 s) ***
+ring 17 - safe for bound 0
+fp chkTime: 0.36 s (norm 0.28 s)
+  Aig interpolant inner iteration 17: |from:13712| -> ternary to+: 1329
+TO+IMG-cube: 665 (f:13712->12382)
+FOUND 447(1 const) EQUIVALENCES - size 12382 -> 11932
+computing interpolant in TO+
+TO: 4006 (supp: 1557) - AIG nodes 101653
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=14191.
+*** Trav time: 30.58 s (norm 23.89 s) ***
+ring 18 - safe for bound 0
+fp chkTime: 0.27 s (norm 0.21 s)
+  Aig interpolant inner iteration 18: |from:13776| -> ternary to+: 1317
+TO+IMG-cube: 659 (f:13776->12458)
+FOUND 450(1 const) EQUIVALENCES - size 12458 -> 12005
+computing interpolant in TO+
+TO: 4012 (supp: 1557) - AIG nodes 103510
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=16193.
+*** Trav time: 32.42 s (norm 25.32 s) ***
+ring 19 - safe for bound 0
+fp chkTime: 0.57 s (norm 0.44 s)
+  Aig interpolant inner iteration 19: |from:13818| -> ternary to+: 1305
+TO+IMG-cube: 653 (f:13818->12512)
+FOUND 453(1 const) EQUIVALENCES - size 12512 -> 12056
+computing interpolant in TO+
+TO: 4018 (supp: 1557) - AIG nodes 105272
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=18104.
+*** Trav time: 34.49 s (norm 26.94 s) ***
+ring 20 - safe for bound 0
+fp chkTime: 0.10 s (norm 0.08 s)
+  Aig interpolant inner iteration 20: |from:13862| -> ternary to+: 1297
+TO+IMG-cube: 649 (f:13862->12564)
+FOUND 455(1 const) EQUIVALENCES - size 12564 -> 12106
+computing interpolant in TO+
+TO: 4022 (supp: 1557) - AIG nodes 107069
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=19997.
+*** Trav time: 36.05 s (norm 28.15 s) ***
+ring 21 - safe for bound 0
+fp chkTime: 0.65 s (norm 0.51 s)
+  Aig interpolant inner iteration 21: |from:13891| -> ternary to+: 1289
+TO+IMG-cube: 645 (f:13891->12601)
+FOUND 457(1 const) EQUIVALENCES - size 12601 -> 12141
+computing interpolant in TO+
+TO: 4026 (supp: 1557) - AIG nodes 115448
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=14178.
+*** Trav time: 39.38 s (norm 30.75 s) ***
+ring 22 - safe for bound 0
+fp chkTime: 0.20 s (norm 0.16 s)
+  Aig interpolant inner iteration 22: |from:13922| -> ternary to+: 1281
+TO+IMG-cube: 641 (f:13922->12640)
+FOUND 459(1 const) EQUIVALENCES - size 12640 -> 12178
+computing interpolant in TO+
+TO: 4030 (supp: 1557) - AIG nodes 112667
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=16159.
+*** Trav time: 41.42 s (norm 32.35 s) ***
+ring 23 - safe for bound 0
+fp chkTime: 0.58 s (norm 0.46 s)
+  Aig interpolant inner iteration 23: |from:13951| -> ternary to+: 1273
+TO+IMG-cube: 637 (f:13951->12677)
+FOUND 461(1 const) EQUIVALENCES - size 12677 -> 12213
+computing interpolant in TO+
+TO: 4034 (supp: 1557) - AIG nodes 114367
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=18044.
+*** Trav time: 43.63 s (norm 34.08 s) ***
+ring 24 - safe for bound 0
+fp chkTime: 0.20 s (norm 0.15 s)
+  Aig interpolant inner iteration 24: |from:13985| -> ternary to+: 1265
+TO+IMG-cube: 633 (f:13985->12719)
+FOUND 463(1 const) EQUIVALENCES - size 12719 -> 12253
+computing interpolant in TO+
+TO: 4038 (supp: 1557) - AIG nodes 116032
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=19866.
+*** Trav time: 45.38 s (norm 35.44 s) ***
+ring 25 - safe for bound 0
+fp chkTime: 0.62 s (norm 0.49 s)
+  Aig interpolant inner iteration 25: |from:14011| -> ternary to+: 1257
+TO+IMG-cube: 629 (f:14011->12753)
+FOUND 465(1 const) EQUIVALENCES - size 12753 -> 12285
+computing interpolant in TO+
+TO: 4042 (supp: 1557) - AIG nodes 117787
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=21723.
+*** Trav time: 47.61 s (norm 37.18 s) ***
+ring 26 - safe for bound 0
+fp chkTime: 0.37 s (norm 0.29 s)
+  Aig interpolant inner iteration 26: |from:14043| -> ternary to+: 1249
+TO+IMG-cube: 625 (f:14043->12793)
+FOUND 467(1 const) EQUIVALENCES - size 12793 -> 12323
+computing interpolant in TO+
+TO: 4046 (supp: 1557) - AIG nodes 119574
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=23592.
+*** Trav time: 49.42 s (norm 38.60 s) ***
+ring 27 - safe for bound 0
+fp chkTime: 1.13 s (norm 0.88 s)
+  Aig interpolant inner iteration 27: |from:14071| -> ternary to+: 1241
+TO+IMG-cube: 621 (f:14071->12829)
+FOUND 469(1 const) EQUIVALENCES - size 12829 -> 12357
+computing interpolant in TO+
+TO: 4050 (supp: 1557) - AIG nodes 121277
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=25368.
+*** Trav time: 51.97 s (norm 40.59 s) ***
+ring 28 - safe for bound 0
+fp chkTime: 0.25 s (norm 0.19 s)
+  Aig interpolant inner iteration 28: |from:14102| -> ternary to+: 1233
+TO+IMG-cube: 617 (f:14102->12868)
+FOUND 471(1 const) EQUIVALENCES - size 12868 -> 12394
+computing interpolant in TO+
+TO: 4054 (supp: 1557) - AIG nodes 122989
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=27130.
+*** Trav time: 53.90 s (norm 42.09 s) ***
+ring 29 - safe for bound 0
+fp chkTime: 0.87 s (norm 0.68 s)
+  Aig interpolant inner iteration 29: |from:14131| -> ternary to+: 1225
+TO+IMG-cube: 613 (f:14131->12905)
+FOUND 473(1 const) EQUIVALENCES - size 12905 -> 12429
+computing interpolant in TO+
+TO: 4058 (supp: 1557) - AIG nodes 124698
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=28874.
+*** Trav time: 56.24 s (norm 43.92 s) ***
+ring 30 - safe for bound 0
+fp chkTime: 0.32 s (norm 0.25 s)
+  Aig interpolant inner iteration 30: |from:14163| -> ternary to+: 1217
+TO+IMG-cube: 609 (f:14163->12945)
+FOUND 475(1 const) EQUIVALENCES - size 12945 -> 12467
+computing interpolant in TO+
+TO: 4062 (supp: 1557) - AIG nodes 126418
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=30626.
+*** Trav time: 58.03 s (norm 45.32 s) ***
+ring 31 - safe for bound 0
+fp chkTime: 1.60 s (norm 1.25 s)
+  Aig interpolant inner iteration 31: |from:14193| -> ternary to+: 1209
+TO+IMG-cube: 605 (f:14193->12983)
+FOUND 477(1 const) EQUIVALENCES - size 12983 -> 12503
+computing interpolant in TO+
+TO: 4066 (supp: 1557) - AIG nodes 128143
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=32363.
+*** Trav time: 61.58 s (norm 48.10 s) ***
+ring 32 - safe for bound 0
+fp chkTime: 0.16 s (norm 0.13 s)
+  Aig interpolant inner iteration 32: |from:14225| -> ternary to+: 1201
+TO+IMG-cube: 601 (f:14225->13023)
+FOUND 479(1 const) EQUIVALENCES - size 13023 -> 12541
+computing interpolant in TO+
+TO: 4070 (supp: 1557) - AIG nodes 129752
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=34003.
+*** Trav time: 63.52 s (norm 49.61 s) ***
+ring 33 - safe for bound 0
+fp chkTime: 1.50 s (norm 1.17 s)
+  Aig interpolant inner iteration 33: |from:14253| -> ternary to+: 1193
+TO+IMG-cube: 597 (f:14253->13059)
+FOUND 481(1 const) EQUIVALENCES - size 13059 -> 12575
+computing interpolant in TO+
+TO: 4074 (supp: 1557) - AIG nodes 131352
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=35630.
+*** Trav time: 67.28 s (norm 52.54 s) ***
+ring 34 - safe for bound 0
+fp chkTime: 0.64 s (norm 0.50 s)
+  Aig interpolant inner iteration 34: |from:14282| -> ternary to+: 1185
+TO+IMG-cube: 593 (f:14282->13096)
+FOUND 483(1 const) EQUIVALENCES - size 13096 -> 12610
+computing interpolant in TO+
+TO: 4078 (supp: 1557) - AIG nodes 132963
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=37260.
+*** Trav time: 69.93 s (norm 54.61 s) ***
+ring 35 - safe for bound 0
+fp chkTime: 1.53 s (norm 1.20 s)
+  Aig interpolant inner iteration 35: |from:14311| -> ternary to+: 1177
+TO+IMG-cube: 589 (f:14311->13133)
+FOUND 485(1 const) EQUIVALENCES - size 13133 -> 12645
+computing interpolant in TO+
+TO: 4082 (supp: 1557) - AIG nodes 134533
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=38850.
+*** Trav time: 73.36 s (norm 57.30 s) ***
+ring 36 - safe for bound 0
+fp chkTime: 0.32 s (norm 0.25 s)
+  Aig interpolant inner iteration 36: |from:14343| -> ternary to+: 1169
+TO+IMG-cube: 585 (f:14343->13173)
+FOUND 487(1 const) EQUIVALENCES - size 13173 -> 12683
+computing interpolant in TO+
+TO: 4086 (supp: 1557) - AIG nodes 136195
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=40518.
+*** Trav time: 75.16 s (norm 58.70 s) ***
+ring 37 - safe for bound 0
+fp chkTime: 1.30 s (norm 1.01 s)
+  Aig interpolant inner iteration 37: |from:14371| -> ternary to+: 1161
+TO+IMG-cube: 581 (f:14371->13209)
+FOUND 489(1 const) EQUIVALENCES - size 13209 -> 12717
+computing interpolant in TO+
+TO: 4090 (supp: 1557) - AIG nodes 137867
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=42201.
+*** Trav time: 78.17 s (norm 61.05 s) ***
+ring 38 - safe for bound 0
+fp chkTime: 0.22 s (norm 0.17 s)
+  Aig interpolant inner iteration 38: |from:14403| -> ternary to+: 1153
+TO+IMG-cube: 577 (f:14403->13249)
+FOUND 491(1 const) EQUIVALENCES - size 13249 -> 12755
+computing interpolant in TO+
+TO: 4094 (supp: 1557) - AIG nodes 139515
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=43905.
+*** Trav time: 79.89 s (norm 62.39 s) ***
+ring 39 - safe for bound 0
+fp chkTime: 1.78 s (norm 1.39 s)
+  Aig interpolant inner iteration 39: |from:14431| -> ternary to+: 1145
+TO+IMG-cube: 573 (f:14431->13285)
+FOUND 493(1 const) EQUIVALENCES - size 13285 -> 12789
+computing interpolant in TO+
+TO: 4098 (supp: 1557) - AIG nodes 141104
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=45503.
+*** Trav time: 83.27 s (norm 65.04 s) ***
+ring 40 - safe for bound 0
+fp chkTime: 0.21 s (norm 0.16 s)
+  Aig interpolant inner iteration 40: |from:14463| -> ternary to+: 1137
+TO+IMG-cube: 569 (f:14463->13325)
+FOUND 495(1 const) EQUIVALENCES - size 13325 -> 12827
+computing interpolant in TO+
+TO: 4102 (supp: 1557) - AIG nodes 142702
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=47108.
+*** Trav time: 85.74 s (norm 66.97 s) ***
+ring 41 - safe for bound 0
+fp chkTime: 2.42 s (norm 1.89 s)
+  Aig interpolant inner iteration 41: |from:14491| -> ternary to+: 1129
+TO+IMG-cube: 565 (f:14491->13361)
+FOUND 497(1 const) EQUIVALENCES - size 13361 -> 12861
+computing interpolant in TO+
+TO: 4106 (supp: 1557) - AIG nodes 144373
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=48787.
+*** Trav time: 90.75 s (norm 70.87 s) ***
+ring 42 - safe for bound 0
+fp chkTime: 0.21 s (norm 0.16 s)
+  Aig interpolant inner iteration 42: |from:14522| -> ternary to+: 1121
+TO+IMG-cube: 561 (f:14522->13400)
+FOUND 499(1 const) EQUIVALENCES - size 13400 -> 12898
+computing interpolant in TO+
+TO: 4110 (supp: 1557) - AIG nodes 146086
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=50521.
+*** Trav time: 93.24 s (norm 72.82 s) ***
+ring 43 - safe for bound 0
+fp chkTime: 1.90 s (norm 1.48 s)
+  Aig interpolant inner iteration 43: |from:14551| -> ternary to+: 1113
+TO+IMG-cube: 557 (f:14551->13437)
+FOUND 501(1 const) EQUIVALENCES - size 13437 -> 12933
+computing interpolant in TO+
+TO: 4114 (supp: 1557) - AIG nodes 147752
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=52202.
+*** Trav time: 96.62 s (norm 75.46 s) ***
+ring 44 - safe for bound 0
+fp chkTime: 0.54 s (norm 0.43 s)
+  Aig interpolant inner iteration 44: |from:14639| -> ternary to+: 1097
+TO+IMG-cube: 549 (f:14639->13541)
+FOUND 505(1 const) EQUIVALENCES - size 13541 -> 13033
+computing interpolant in TO+
+TO: 4122 (supp: 1557) - AIG nodes 149489
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=54037.
+*** Trav time: 98.80 s (norm 77.17 s) ***
+ring 45 - safe for bound 0
+fp chkTime: 2.04 s (norm 1.59 s)
+  Aig interpolant inner iteration 45: |from:14693| -> ternary to+: 1081
+TO+IMG-cube: 541 (f:14693->13611)
+FOUND 509(1 const) EQUIVALENCES - size 13611 -> 13099
+computing interpolant in TO+
+TO: 4130 (supp: 1557) - AIG nodes 151274
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=55733.
+*** Trav time: 103.50 s (norm 80.83 s) ***
+ring 46 - safe for bound 0
+fp chkTime: 0.62 s (norm 0.49 s)
+  Aig interpolant inner iteration 46: |from:14739| -> ternary to+: 1073
+TO+IMG-cube: 537 (f:14739->13665)
+FOUND 511(1 const) EQUIVALENCES - size 13665 -> 13151
+computing interpolant in TO+
+TO: 4134 (supp: 1557) - AIG nodes 152920
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=57396.
+*** Trav time: 105.85 s (norm 82.67 s) ***
+ring 47 - safe for bound 0
+fp chkTime: 1.96 s (norm 1.53 s)
+  Aig interpolant inner iteration 47: |from:14765| -> ternary to+: 1065
+TO+IMG-cube: 533 (f:14765->13699)
+FOUND 513(1 const) EQUIVALENCES - size 13699 -> 13183
+computing interpolant in TO+
+TO: 4138 (supp: 1557) - AIG nodes 154597
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=59084.
+*** Trav time: 110.92 s (norm 86.63 s) ***
+ring 48 - safe for bound 0
+fp chkTime: 0.53 s (norm 0.41 s)
+  Aig interpolant inner iteration 48: |from:14797| -> ternary to+: 1057
+TO+IMG-cube: 529 (f:14797->13739)
+FOUND 515(1 const) EQUIVALENCES - size 13739 -> 13221
+computing interpolant in TO+
+TO: 4142 (supp: 1557) - AIG nodes 156313
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=60808.
+*** Trav time: 114.22 s (norm 89.21 s) ***
+ring 49 - safe for bound 0
+fp chkTime: 2.45 s (norm 1.91 s)
+  Aig interpolant inner iteration 49: |from:14825| -> ternary to+: 1049
+TO+IMG-cube: 525 (f:14825->13775)
+FOUND 517(1 const) EQUIVALENCES - size 13775 -> 13255
+computing interpolant in TO+
+TO: 4144 (supp: 1557) - AIG nodes 158009
+TO*TO+: 4669 (supp: 1557)
+|to:4669|.
+   |tr|=19026 |reached|=62502.
+*** Trav time: 119.53 s (norm 93.36 s) ***
+ring 50 - safe for bound 0
+fp chkTime: 0.51 s (norm 0.40 s)
+  Aig interpolant inner iteration 50: |from:14855| -> ternary to+: 1041
+TO+IMG-cube: 521 (f:14855->13813)
+FOUND 519(1 const) EQUIVALENCES - size 13813 -> 13291
+computing interpolant in TO+
+TO: 4150 (supp: 1557) - AIG nodes 159657
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=64172.
+*** Trav time: 122.72 s (norm 95.84 s) ***
+ring 51 - safe for bound 0
+fp chkTime: 2.42 s (norm 1.89 s)
+  Aig interpolant inner iteration 51: |from:14884| -> ternary to+: 1033
+TO+IMG-cube: 517 (f:14884->13850)
+FOUND 521(1 const) EQUIVALENCES - size 13850 -> 13326
+computing interpolant in TO+
+TO: 4154 (supp: 1557) - AIG nodes 161341
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=65858.
+*** Trav time: 126.89 s (norm 99.10 s) ***
+ring 52 - safe for bound 0
+fp chkTime: 0.58 s (norm 0.46 s)
+  Aig interpolant inner iteration 52: |from:15074| -> ternary to+: 977
+TO+IMG-cube: 489 (f:15074->14096)
+FOUND 535(1 const) EQUIVALENCES - size 14096 -> 13556
+computing interpolant in TO+
+TO: 4182 (supp: 1557) - AIG nodes 163072
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=67643.
+*** Trav time: 130.36 s (norm 101.81 s) ***
+ring 53 - safe for bound 0
+fp chkTime: 3.09 s (norm 2.42 s)
+  Aig interpolant inner iteration 53: |from:15270| -> ternary to+: 921
+TO+IMG-cube: 461 (f:15270->14348)
+FOUND 549(1 const) EQUIVALENCES - size 14348 -> 13794
+computing interpolant in TO+
+TO: 4210 (supp: 1557) - AIG nodes 164859
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=69330.
+*** Trav time: 136.72 s (norm 106.78 s) ***
+ring 54 - safe for bound 0
+fp chkTime: 0.58 s (norm 0.45 s)
+  Aig interpolant inner iteration 54: |from:15523| -> ternary to+: 897
+TO+IMG-cube: 449 (f:15523->14625)
+FOUND 555(1 const) EQUIVALENCES - size 14625 -> 14065
+computing interpolant in TO+
+TO: 4222 (supp: 1557) - AIG nodes 166533
+TO*TO+: 4671 (supp: 1557)
+|to:4671|.
+   |tr|=19026 |reached|=71089.
+*** Trav time: 139.37 s (norm 108.85 s) ***
+ring 55 - safe for bound 0
+fp chkTime: 2.98 s (norm 2.33 s)
+  Aig interpolant inner iteration 55: |from:15601| -> ternary to+: 877
+TO+IMG-cube: 439 (f:15601->14723)
+FOUND 559(1 const) EQUIVALENCES - size 14723 -> 14159
+computing interpolant in TO+
+TO: 4227 (supp: 1556) - AIG nodes 168305
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=72785.
+*** Trav time: 145.97 s (norm 114.00 s) ***
+ring 56 - safe for bound 0
+fp chkTime: 2.27 s (norm 1.77 s)
+  Aig interpolant inner iteration 56: |from:16821| -> ternary to+: 721
+TO+IMG-cube: 361 (f:16821->16099)
+FOUND 598(1 const) EQUIVALENCES - size 16099 -> 15496
+computing interpolant in TO+
+TO: 4305 (supp: 1556) - AIG nodes 169979
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=74441.
+*** Trav time: 150.31 s (norm 117.39 s) ***
+ring 57 - safe for bound 0
+fp chkTime: 3.69 s (norm 2.88 s)
+  Aig interpolant inner iteration 57: |from:17366| -> ternary to+: 565
+TO+IMG-cube: 283 (f:17366->16800)
+FOUND 637(1 const) EQUIVALENCES - size 16800 -> 16158
+computing interpolant in TO+
+TO: 4383 (supp: 1556) - AIG nodes 171828
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=76186.
+*** Trav time: 157.55 s (norm 123.05 s) ***
+ring 58 - safe for bound 0
+fp chkTime: 3.42 s (norm 2.67 s)
+  Aig interpolant inner iteration 58: |from:17865| -> ternary to+: 561
+TO+IMG-cube: 281 (f:17865->17303)
+FOUND 638(1 const) EQUIVALENCES - size 17303 -> 16660
+computing interpolant in TO+
+TO: 4385 (supp: 1556) - AIG nodes 173384
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=77632.
+*** Trav time: 163.39 s (norm 127.61 s) ***
+ring 59 - safe for bound 0
+fp chkTime: 4.64 s (norm 3.62 s)
+  Aig interpolant inner iteration 59: |from:17881| -> ternary to+: 557
+TO+IMG-cube: 279 (f:17881->17323)
+FOUND 639(1 const) EQUIVALENCES - size 17323 -> 16679
+computing interpolant in TO+
+TO: 4387 (supp: 1556) - AIG nodes 174709
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=78976.
+*** Trav time: 172.91 s (norm 135.04 s) ***
+ring 60 - safe for bound 0
+fp chkTime: 4.14 s (norm 3.23 s)
+  Aig interpolant inner iteration 60: |from:18161| -> ternary to+: 549
+TO+IMG-cube: 275 (f:18161->17611)
+FOUND 641(1 const) EQUIVALENCES - size 17611 -> 16965
+computing interpolant in TO+
+TO: 4391 (supp: 1556) - AIG nodes 176033
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=80443.
+*** Trav time: 181.55 s (norm 141.79 s) ***
+ring 61 - safe for bound 0
+fp chkTime: 4.92 s (norm 3.84 s)
+  Aig interpolant inner iteration 61: |from:18188| -> ternary to+: 541
+TO+IMG-cube: 271 (f:18188->17646)
+FOUND 643(1 const) EQUIVALENCES - size 17646 -> 16998
+computing interpolant in TO+
+TO: 4395 (supp: 1556) - AIG nodes 177564
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=81853.
+*** Trav time: 189.52 s (norm 148.02 s) ***
+ring 62 - safe for bound 0
+fp chkTime: 1.28 s (norm 1.00 s)
+  Aig interpolant inner iteration 62: |from:18235| -> ternary to+: 537
+TO+IMG-cube: 269 (f:18235->17697)
+FOUND 644(1 const) EQUIVALENCES - size 17697 -> 17048
+computing interpolant in TO+
+TO: 4397 (supp: 1556) - AIG nodes 178953
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=83248.
+*** Trav time: 196.00 s (norm 153.08 s) ***
+ring 63 - safe for bound 0
+fp chkTime: 3.42 s (norm 2.67 s)
+  Aig interpolant inner iteration 63: |from:18251| -> ternary to+: 533
+TO+IMG-cube: 267 (f:18251->17717)
+FOUND 645(1 const) EQUIVALENCES - size 17717 -> 17067
+computing interpolant in TO+
+TO: 4399 (supp: 1556) - AIG nodes 180245
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=84565.
+*** Trav time: 202.04 s (norm 157.79 s) ***
+ring 64 - safe for bound 0
+fp chkTime: 1.45 s (norm 1.13 s)
+  Aig interpolant inner iteration 64: |from:19729| -> ternary to+: 285
+TO+IMG-cube: 143 (f:19729->19443)
+FOUND 707(1 const) EQUIVALENCES - size 19443 -> 18731
+computing interpolant in TO+
+TO: 4523 (supp: 1556) - AIG nodes 181811
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=86079.
+*** Trav time: 206.59 s (norm 161.35 s) ***
+ring 65 - safe for bound 0
+fp chkTime: 2.90 s (norm 2.27 s)
+  Aig interpolant inner iteration 65: |from:20597| -> ternary to+: 37
+TO+IMG-cube: 19 (f:20597->20559)
+FOUND 769(1 const) EQUIVALENCES - size 20559 -> 19785
+computing interpolant in TO+
+TO: 4647 (supp: 1556) - AIG nodes 183555
+TO*TO+: 4666 (supp: 1556)
+|to:4666|.
+   |tr|=19026 |reached|=87643.
+*** Trav time: 212.98 s (norm 166.34 s) ***
+ring 66 - safe for bound 0
+fp chkTime: 1.38 s (norm 1.08 s)
+  Aig interpolant inner iteration 66: |from:21992| -> ternary to+: 25
+TO+IMG-cube: 13 (f:21992->21966)
+FOUND 770(1 const) EQUIVALENCES - size 21966 -> 21191
+computing interpolant in TO+
+TO: 4641 (supp: 1552) - AIG nodes 184911
+TO*TO+: 4654 (supp: 1552)
+|to:4654|.
+   |tr|=19026 |reached|=89026.
+*** Trav time: 218.22 s (norm 170.43 s) ***
+ring 67 - safe for bound 0
+fp chkTime: 9.31 s (norm 7.27 s)
+  Aig interpolant inner iteration 67: |from:22025| -> ternary to+: 13
+TO+IMG-cube: 7 (f:22025->22011)
+FOUND 771(1 const) EQUIVALENCES - size 22011 -> 21235
+computing interpolant in TO+
+TO: 4635 (supp: 1548) - AIG nodes 186208
+TO*TO+: 4642 (supp: 1548)
+|to:4642|.
+   |tr|=19026 |reached|=90347.
+*** Trav time: 231.47 s (norm 180.77 s) ***
+ring 68 - safe for bound 0
+fp chkTime: 1.42 s (norm 1.11 s)
+  Aig interpolant inner iteration 68: |from:22068| -> ternary to+: 7
+TO+IMG-cube: 4 (f:22068->22060)
+FOUND 770(1 const) EQUIVALENCES - size 22060 -> 21285
+computing interpolant in TO+
+TO: 4623 (supp: 1543) - AIG nodes 187404
+TO*TO+: 4627 (supp: 1543)
+|to:4627|.
+   |tr|=19026 |reached|=91580.
+*** Trav time: 239.95 s (norm 187.40 s) ***
+ring 69 - safe for bound 0
+fp chkTime: 8.21 s (norm 6.41 s)
+  Aig interpolant inner iteration 69: |from:22080| -> ternary to+: 1
+TO+IMG-cube: 1 (f:22080->22078)
+FOUND 769(1 const) EQUIVALENCES - size 22078 -> 21304
+computing interpolant in TO+
+TO: 4611 (supp: 1538) - AIG nodes 188705
+TO*TO+: 4611 (supp: 1538)
+|to:4611|.
+   |tr|=19026 |reached|=92899.
+*** Trav time: 255.15 s (norm 199.27 s) ***
+ring 70 - safe for bound 0
+fp chkTime: 5.73 s (norm 4.47 s)
+  Aig interpolant inner iteration 70: |from:22094| -> ternary to+: 1
+TO+IMG-cube: 1 (f:22094->22092)
+FOUND 764(1 const) EQUIVALENCES - size 22092 -> 21323
+computing interpolant in TO+
+TO: 4581 (supp: 1528) - AIG nodes 189836
+TO*TO+: 4581 (supp: 1528)
+|to:4581|.
+   |tr|=19026 |reached|=94060.
+*** Trav time: 267.68 s (norm 209.06 s) ***
+ring 71 - safe for bound 0
+fp chkTime: 11.98 s (norm 9.35 s)
+  Aig interpolant inner iteration 71: |from:22073| -> ternary to+: 1
+TO+IMG-cube: 1 (f:22073->22071)
+FOUND 759(1 const) EQUIVALENCES - size 22071 -> 21307
+computing interpolant in TO+
+TO: 4551 (supp: 1518) - AIG nodes 190936
+TO*TO+: 4551 (supp: 1518)
+|to:4551|.
+   |tr|=19026 |reached|=95192.
+*** Trav time: 284.51 s (norm 222.21 s) ***
+ring 72 - safe for bound 0
+fp chkTime: 1.73 s (norm 1.35 s)
+  Aig interpolant inner iteration 72: |from:22053| -> ternary to+: 1
+TO+IMG-cube: 1 (f:22053->22051)
+FOUND 633(1 const) EQUIVALENCES - size 22051 -> 21413
+computing interpolant in TO+
+TO: 3795 (supp: 1266) - AIG nodes 192129
+TO*TO+: 3795 (supp: 1266)
+|to:3795|.
+   |tr|=19026 |reached|=96201.
+*** Trav time: 290.70 s (norm 227.04 s) ***
+ring 73 - safe for bound 0
+fp chkTime: 3.63 s (norm 2.84 s)
+  Aig interpolant inner iteration 73: |from:21550| -> ternary to+: 1
+TO+IMG-cube: 1 (f:21550->21548)
+FOUND 507(1 const) EQUIVALENCES - size 21548 -> 21036
+computing interpolant in TO+
+TO: 3039 (supp: 1014) - AIG nodes 192334
+TO*TO+: 3039 (supp: 1014)
+|to:3039|.
+   |tr|=19026 |reached|=96931.
+*** Trav time: 298.83 s (norm 233.39 s) ***
+ring 74 - safe for bound 0
+fp chkTime: 1.26 s (norm 0.98 s)
+  Aig interpolant inner iteration 74: |from:21048| -> ternary to+: 1
+TO+IMG-cube: 1 (f:21048->21046)
+FOUND 426(1 const) EQUIVALENCES - size 21046 -> 20617
+computing interpolant in TO+
+TO: 2553 (supp: 852) - AIG nodes 192461
+TO*TO+: 2553 (supp: 852)
+|to:2553|.
+   |tr|=19026 |reached|=97637.
+*** Trav time: 303.73 s (norm 237.21 s) ***
+ring 75 - safe for bound 0
+fp chkTime: 2.91 s (norm 2.28 s)
+  Aig interpolant inner iteration 75: |from:20724| -> ternary to+: 1
+TO+IMG-cube: 1 (f:20724->20722)
+FOUND 345(1 const) EQUIVALENCES - size 20722 -> 20374
+computing interpolant in TO+
+TO: 2067 (supp: 690) - AIG nodes 192710
+TO*TO+: 2067 (supp: 690)
+|to:2067|.
+   |tr|=19026 |reached|=98224.
+*** Trav time: 310.44 s (norm 242.45 s) ***
+ring 76 - safe for bound 0
+fp chkTime: 0.49 s (norm 0.38 s)
+  Aig interpolant inner iteration 76: |from:20400| -> ternary to+: 1
+TO+IMG-cube: 1 (f:20400->20398)
+FOUND 205(0 const) EQUIVALENCES - size 20398 -> 20193
+Inner loop REACHES back cone.
+
+try ITP ref. # 1/16 - cone/constr 0 of size: 3 - ring: 76 (rl: 0)
+ITP ref. chk[76] - cone sz: 2069 - fwd ring: 2067
+ITP ref. chk[75] - cone sz: 2565 - fwd ring: 2553
+ITP ref. chk[74] - cone sz: 3075 - fwd ring: 3039
+RING CONSTR: [74]&3039
+ITP ref. chk[73] - cone sz: 5633 - fwd ring: 3795
+RING CONSTR: [73]&3795
+ITP ref. chk[72] - cone sz: 6419 - fwd ring: 4551
+RING CONSTR: [72]&4551
+ITP ref. chk[71] - cone sz: 8477 - fwd ring: 4581
+RING CONSTR: [72]&4551
+ITP ref. chk[70] - cone sz: 14606 - fwd ring: 4611
+RING CONSTR: [71]&4581
+ITP ref. chk[69] - cone sz: 14725 - fwd ring: 4627
+RING CONSTR: [70]&4611
+ITP ref. chk[68] - cone sz: 14905 - fwd ring: 4642
+RING CONSTR: [70]&4611
+ITP ref. chk[67] - cone sz: 27195 - fwd ring: 4654
+RING CONSTR: [69]&4627
+ITP ref. chk[66] - cone sz: 27303 - fwd ring: 4666
+refinement possible at level 66
+
+Interpolant FINITE RUN: cone=3, care=0.
+fp chkTime: 2.58 s (norm 2.01 s)
+  Aig interpolant inner iteration 66: |from:21992| -> previous ring 67 - safe for bound 0
+ring cone (e) - generated part[66/77] of size: 5277 - bound: 10
+DYN ABSTR (M22) KEPT 15/783 vars (time: 0.02 s (norm 0.02 s))
+ITP (|A|=3830,|B|=5294)
+ITP time limit: 10000
+Solver stats: 9109/9683 vars/clauses (elim v/cl:0/0)
+Solver stats: 10119/63623/1774 dec./prop./confl.
+Solver stats: time = 0.01 s (norm 0.01 s)
+Solver Validation time = 0.00 s (norm 0.00 s) - prop:115588
+Solver Replay time = 0.01 s (norm 0.01 s) - prop: 164574
+computing interpolant from refutation proof of size 2538 (AIG nodes: 302168)
+RES PROOF REMOVED 6 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 3556 resolutions
+RESTRUCT PROOF REMOVED 860 redundant resolutions
+RES PROOF PROCESSED: 822 A, 1339 B, 1314 resA, 1129 resB, 150 res (tot: 4754)
+RES PROOF has 783 core and 3971 out of core nodes
+RES PROOF compacted from 4754 to 780 nodes
+RES PROOF SWAPPED 7 resolution vars
+resB: 0
+GET PROOF 294 A (0 resA) - 339 B (0 resB) - 147 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 147 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 294 A (0 resA) - 339 B (0 resB) - 147 res - 0 red
+# A cl: 294/633
+ITP proof core: (root: 621,14 + chain: 135 (res: 2016) - ref2: 82) / tot:782
+ITP proof remapped roots: 20 - eq nodes: 46 - tot: 109
+ROOT stats - zero: 266 - one: 335 - lit: 18 - clause: 0
+ITP proof core: (root: 20,0 + chain: 89 (res: 228) - ref2: 49) / tot:109
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 20,0 + chain: 89 (res: 228) - ref2: 49) / tot:109
+ITP proof remapped roots: 25 - eq nodes: 6 - tot: 105
+ROOT stats - zero: 0 - one: 0 - lit: 18 - clause: 0
+ITP proof core: (root: 22,0 + chain: 80 (res: 207) - ref2: 47) / tot:105
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 22,0 + chain: 80 (res: 207) - ref2: 47) / tot:105
+ITP proof remapped roots: 23 - eq nodes: 0 - tot: 102
+ROOT stats - zero: 0 - one: 0 - lit: 16 - clause: 4
+ITP proof core: (root: 21,0 + chain: 79 (res: 206) - ref2: 46) / tot:102
+ITP proof dupv: 0 - implNodesOdc: 25
+ITP proof core: (root: 21,0 + chain: 79 (res: 181) - ref2: 46) / tot:102
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[OR:2]: 95 -> 93
+TOT NNF SIMPL: 93 -> (abcBal: 80) -> 74 (2 iterations)
+RERUN PARTIAL ITP SIZE: 74 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.00 s (norm 0.00 s))
+Solver RERUN1 stats: 9109/633 vars/clauses
+RERUN1 proof has size size 182
+Solver RERUN1 stats: 11733/16191/178 dec./prop./confl.
+
+CHECK Solver Validation time = 0.00 s (norm 0.00 s))
+RERUN Solver Replay time = 0.00 s (norm 0.00 s))
+RERUN Solver res: 655 - resolvents: 211
+# A cl: 106/279
+ITP proof core: (root: 280,1 + chain: 62 (res: 801) - ref2: 51) / tot:382
+ITP proof remapped roots: 14 - eq nodes: 34 - tot: 42
+ROOT stats - zero: 94 - one: 172 - lit: 12 - clause: 0
+ITP proof core: (root: 14,0 + chain: 28 (res: 53) - ref2: 21) / tot:42
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 14,0 + chain: 28 (res: 53) - ref2: 21) / tot:42
+ITP proof remapped roots: 17 - eq nodes: 4 - tot: 38
+ROOT stats - zero: 0 - one: 0 - lit: 12 - clause: 0
+ITP proof core: (root: 15,0 + chain: 21 (res: 39) - ref2: 16) / tot:38
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 15,0 + chain: 21 (res: 39) - ref2: 16) / tot:38
+ITP proof remapped roots: 16 - eq nodes: 0 - tot: 36
+ROOT stats - zero: 0 - one: 0 - lit: 10 - clause: 3
+ITP proof core: (root: 15,0 + chain: 20 (res: 38) - ref2: 15) / tot:36
+ITP proof dupv: 0 - implNodesOdc: 5
+ITP proof core: (root: 15,0 + chain: 20 (res: 33) - ref2: 15) / tot:36
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[OR:2]: 32 -> 30
+TOT NNF SIMPL: 30 -> (abcBal: 30) -> 30 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 30
+
+NNF PBA Solver time = 0.00 s (norm 0.00 s))
+NNF PBA Solver stats: 14817/15685/29 dec./prop./confl.
+NNF PBA Solver Validation time = 0.00 s (norm 0.00 s))
+# AIG core -> gates: 27 / 34 (maxCut: 0)
+NNF PBA size: 30 -> 23
+# A cl: 294/633
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 302198
+itp stats: clause terms/a/o/ao -> 99/0/0/99 - A nodes: 0 (and->or): 32767
+itp opt: 23 -> 23
+TO: 23 (supp: 6) - AIG nodes 302198
+TO*TO+: 23 (supp: 6)
+|to:23|.
+|to&oldTo:4677|.
+   |tr|=19026 |reached|=122700.
+*** Trav time: 320.53 s (norm 250.34 s) ***
+ring 67 - safe for bound 10
+  Reusing SAME CONE ring
+fp chkTime: 10.60 s (norm 8.28 s)
+  Aig interpolant inner iteration 67: |from:22043| -> previous ring 68 - safe for bound 0
+ring cone (e) - generated part[67/78] of size: 5317 - bound: 10
+DYN ABSTR (M22) KEPT 20/788 vars (time: 0.02 s (norm 0.02 s))
+ITP (|A|=3920,|B|=5328)
+ITP time limit: 10000
+Solver stats: 9228/9782 vars/clauses (elim v/cl:0/0)
+Solver stats: 16525/84499/2133 dec./prop./confl.
+Solver stats: time = 0.01 s (norm 0.01 s)
+Solver Validation time = 0.00 s (norm 0.00 s) - prop:148658
+Solver Replay time = 0.01 s (norm 0.01 s) - prop: 207058
+computing interpolant from refutation proof of size 2174 (AIG nodes: 302300)
+RES PROOF REMOVED 41 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 2499 resolutions
+RESTRUCT PROOF REMOVED 64 redundant resolutions
+RES PROOF PROCESSED: 883 A, 1419 B, 1287 resA, 1171 resB, 269 res (tot: 5029)
+RES PROOF has 1185 core and 3844 out of core nodes
+RES PROOF compacted from 5029 to 1185 nodes
+RES PROOF SWAPPED 25 resolution vars
+resB: 0
+GET PROOF 367 A (0 resA) - 549 B (0 resB) - 269 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 269 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 367 A (0 resA) - 549 B (0 resB) - 269 res - 0 red
+# A cl: 367/916
+ITP proof core: (root: 915,3 + chain: 263 (res: 4944) - ref2: 156) / tot:1187
+ITP proof remapped roots: 31 - eq nodes: 77 - tot: 217
+ROOT stats - zero: 338 - one: 546 - lit: 29 - clause: 0
+ITP proof core: (root: 31,0 + chain: 186 (res: 537) - ref2: 103) / tot:217
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 31,0 + chain: 186 (res: 537) - ref2: 103) / tot:217
+ITP proof remapped roots: 41 - eq nodes: 6 - tot: 214
+ROOT stats - zero: 0 - one: 0 - lit: 29 - clause: 0
+ITP proof core: (root: 41,0 + chain: 173 (res: 501) - ref2: 99) / tot:214
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 41,0 + chain: 173 (res: 501) - ref2: 99) / tot:214
+ITP proof remapped roots: 41 - eq nodes: 0 - tot: 214
+ROOT stats - zero: 0 - one: 0 - lit: 29 - clause: 10
+ITP proof core: (root: 41,0 + chain: 173 (res: 501) - ref2: 99) / tot:214
+ITP proof dupv: 0 - implNodesOdc: 24
+ITP proof core: (root: 41,0 + chain: 173 (res: 477) - ref2: 99) / tot:214
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[OR:6]: 310 -> 292
+TOT NNF SIMPL: 292 -> (abcBal: 236) -> 194 (2 iterations)
+RERUN PARTIAL ITP SIZE: 194 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.00 s (norm 0.00 s))
+Solver RERUN1 stats: 9228/916 vars/clauses
+RERUN1 proof has size size 400
+Solver RERUN1 stats: 12982/24297/389 dec./prop./confl.
+
+CHECK Solver Validation time = 0.00 s (norm 0.00 s))
+RERUN Solver Replay time = 0.00 s (norm 0.00 s))
+RERUN Solver res: 1043 - resolvents: 321
+# A cl: 210/549
+ITP proof core: (root: 550,1 + chain: 160 (res: 3034) - ref2: 87) / tot:716
+ITP proof remapped roots: 26 - eq nodes: 52 - tot: 134
+ROOT stats - zero: 186 - one: 338 - lit: 24 - clause: 0
+ITP proof core: (root: 26,0 + chain: 108 (res: 460) - ref2: 55) / tot:134
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 26,0 + chain: 108 (res: 460) - ref2: 55) / tot:134
+ITP proof remapped roots: 30 - eq nodes: 2 - tot: 127
+ROOT stats - zero: 0 - one: 0 - lit: 24 - clause: 0
+ITP proof core: (root: 30,0 + chain: 97 (res: 431) - ref2: 50) / tot:127
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 30,0 + chain: 97 (res: 431) - ref2: 50) / tot:127
+ITP proof remapped roots: 30 - eq nodes: 0 - tot: 127
+ROOT stats - zero: 0 - one: 0 - lit: 24 - clause: 4
+ITP proof core: (root: 30,0 + chain: 97 (res: 431) - ref2: 50) / tot:127
+ITP proof dupv: 0 - implNodesOdc: 43
+ITP proof core: (root: 30,0 + chain: 97 (res: 388) - ref2: 50) / tot:127
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:15]: 291 -> 165
+TOT NNF SIMPL: 165 -> (abcBal: 148) -> 144 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 144
+
+NNF PBA Solver time = 0.00 s (norm 0.00 s))
+NNF PBA Solver stats: 8709/16952/205 dec./prop./confl.
+NNF PBA Solver Validation time = 0.00 s (norm 0.00 s))
+# AIG core -> gates: 88 / 156 (maxCut: 0)
+NNF PBA size: 144 -> 76
+# A cl: 367/916
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 302367
+itp stats: clause terms/a/o/ao -> 270/0/0/270 - A nodes: 0 (and->or): 32767
+itp opt: 76 -> 76
+3/5 (r:2) INDUCTIVE components found in TO+ (size: 70)
+|to simplify: 76->70|.
+TO: 70 (supp: 12) - AIG nodes 302361
+TO*TO+: 70 (supp: 12)
+|to:70|.
+|to&oldTo:4711|.
+   |tr|=19026 |reached|=124069.
+*** Trav time: 333.64 s (norm 260.57 s) ***
+ring 68 - safe for bound 10
+  Reusing SAME CONE ring
+fp chkTime: 3.28 s (norm 2.56 s)
+  Aig interpolant inner iteration 68: |from:22125| -> previous ring 69 - safe for bound 0
+FOUND 2(0 const) EQUIVALENCES - size 21342 -> 21340
+min/avg/max red id: 30/30/31
+FOUND 2 const REDUNDANCIES
+red size: 8 - F size 70 -> 70
+ring cone (e) - generated part[68/79] of size: 5358 - bound: 10
+DYN ABSTR (M22) KEPT 21/790 vars (time: 0.02 s (norm 0.01 s))
+computing interpolant in TO+
+ITP (|A|=3984,|B|=5347)
+ITP time limit: 10000
+Solver stats: 9310/9856 vars/clauses (elim v/cl:0/0)
+Solver stats: 15406/77115/1762 dec./prop./confl.
+Solver stats: time = 0.01 s (norm 0.01 s)
+Solver Validation time = 0.00 s (norm 0.00 s) - prop:109146
+Solver Replay time = 0.01 s (norm 0.01 s) - prop: 137094
+computing interpolant from refutation proof of size 1949 (AIG nodes: 302450)
+RES PROOF REMOVED 77 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 975 resolutions
+RESTRUCT PROOF REMOVED 34 redundant resolutions
+RES PROOF PROCESSED: 973 A, 1432 B, 624 resA, 1265 resB, 216 res (tot: 4510)
+RES PROOF has 1072 core and 3438 out of core nodes
+RES PROOF compacted from 4510 to 1072 nodes
+RES PROOF SWAPPED 22 resolution vars
+resB: 0
+GET PROOF 486 A (0 resA) - 370 B (0 resB) - 216 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 216 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 486 A (0 resA) - 370 B (0 resB) - 216 res - 0 red
+# A cl: 486/856
+ITP proof core: (root: 856,2 + chain: 210 (res: 3551) - ref2: 107) / tot:1074
+ITP proof remapped roots: 37 - eq nodes: 57 - tot: 190
+ROOT stats - zero: 451 - one: 368 - lit: 35 - clause: 0
+ITP proof core: (root: 37,0 + chain: 153 (res: 622) - ref2: 73) / tot:190
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 37,0 + chain: 153 (res: 622) - ref2: 73) / tot:190
+ITP proof remapped roots: 51 - eq nodes: 7 - tot: 190
+ROOT stats - zero: 0 - one: 0 - lit: 35 - clause: 0
+ITP proof core: (root: 46,0 + chain: 139 (res: 594) - ref2: 66) / tot:190
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 46,0 + chain: 139 (res: 594) - ref2: 66) / tot:190
+ITP proof remapped roots: 46 - eq nodes: 0 - tot: 185
+ROOT stats - zero: 0 - one: 0 - lit: 30 - clause: 14
+ITP proof core: (root: 46,0 + chain: 139 (res: 594) - ref2: 66) / tot:185
+ITP proof dupv: 0 - implNodesOdc: 64
+ITP proof core: (root: 46,0 + chain: 139 (res: 530) - ref2: 66) / tot:185
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[OR:10]: 393 -> 355
+TOT NNF SIMPL: 355 -> (abcBal: 287) -> 215 (2 iterations)
+RERUN PARTIAL ITP SIZE: 215 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.00 s (norm 0.00 s))
+Solver RERUN1 stats: 9310/856 vars/clauses
+RERUN1 proof has size size 171
+Solver RERUN1 stats: 16436/21000/159 dec./prop./confl.
+
+CHECK Solver Validation time = 0.00 s (norm 0.00 s))
+RERUN Solver Replay time = 0.00 s (norm 0.00 s))
+RERUN Solver res: 639 - resolvents: 144
+# A cl: 181/367
+ITP proof core: (root: 368,1 + chain: 69 (res: 1113) - ref2: 43) / tot:449
+ITP proof remapped roots: 27 - eq nodes: 25 - tot: 71
+ROOT stats - zero: 156 - one: 185 - lit: 25 - clause: 0
+ITP proof core: (root: 27,0 + chain: 44 (res: 167) - ref2: 28) / tot:71
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 27,0 + chain: 44 (res: 167) - ref2: 28) / tot:71
+ITP proof remapped roots: 37 - eq nodes: 5 - tot: 73
+ROOT stats - zero: 0 - one: 0 - lit: 25 - clause: 0
+ITP proof core: (root: 33,0 + chain: 36 (res: 139) - ref2: 23) / tot:73
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 33,0 + chain: 36 (res: 139) - ref2: 23) / tot:73
+ITP proof remapped roots: 34 - eq nodes: 0 - tot: 69
+ROOT stats - zero: 0 - one: 0 - lit: 22 - clause: 9
+ITP proof core: (root: 32,0 + chain: 35 (res: 138) - ref2: 23) / tot:69
+ITP proof dupv: 0 - implNodesOdc: 15
+ITP proof core: (root: 32,0 + chain: 35 (res: 123) - ref2: 23) / tot:69
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:9]: 108 -> 102
+TOT NNF SIMPL: 102 -> (abcBal: 92) -> 92 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 92
+
+NNF PBA Solver time = 0.00 s (norm 0.00 s))
+NNF PBA Solver stats: 9408/10922/54 dec./prop./confl.
+NNF PBA Solver Validation time = 0.00 s (norm 0.00 s))
+# AIG core -> gates: 75 / 102 (maxCut: 0)
+NNF PBA size: 92 -> 65
+# A cl: 486/856
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 302495
+itp stats: clause terms/a/o/ao -> 174/0/0/174 - A nodes: 0 (and->or): 32767
+itp opt: 65 -> 65
+7/7 (r:0) INDUCTIVE components found in TO+ (size: 65)
+TO: 65 (supp: 17) - AIG nodes 302494
+TO*TO+: 85 (supp: 23)
+|to:85|.
+|to&oldTo:4706|.
+   |tr|=19026 |reached|=125344.
+*** Trav time: 339.42 s (norm 265.09 s) ***
+ring 69 - safe for bound 10
+  Reusing SAME CONE ring
+fp chkTime: 11.48 s (norm 8.97 s)
+  Aig interpolant inner iteration 69: |from:22141| -> previous ring 70 - safe for bound 0
+FOUND 4(0 const) EQUIVALENCES - size 21365 -> 21361
+min/avg/max red id: 31/52/67
+FOUND 5 const REDUNDANCIES
+red size: 47 - F size 68 -> 68
+ring cone (e) - generated part[69/80] of size: 5396 - bound: 10
+DYN ABSTR (M22) KEPT 24/792 vars (time: 0.03 s (norm 0.02 s))
+computing interpolant in TO+
+ITP (|A|=4017,|B|=5396)
+ITP time limit: 10000
+Solver stats: 9389/10165 vars/clauses (elim v/cl:0/0)
+Solver stats: 14164/69610/1611 dec./prop./confl.
+Solver stats: time = 0.02 s (norm 0.01 s)
+Solver Validation time = 0.00 s (norm 0.00 s) - prop:104993
+Solver Replay time = 0.01 s (norm 0.01 s) - prop: 137115
+computing interpolant from refutation proof of size 1633 (AIG nodes: 302576)
+RES PROOF REMOVED 44 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 1294 resolutions
+RESTRUCT PROOF REMOVED 67 redundant resolutions
+RES PROOF PROCESSED: 883 A, 1471 B, 695 resA, 1206 resB, 297 res (tot: 4552)
+RES PROOF has 1078 core and 3474 out of core nodes
+RES PROOF compacted from 4552 to 1078 nodes
+RES PROOF SWAPPED 28 resolution vars
+resB: 0
+GET PROOF 281 A (0 resA) - 500 B (0 resB) - 297 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 297 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 281 A (0 resA) - 500 B (0 resB) - 297 res - 0 red
+# A cl: 281/781
+ITP proof core: (root: 778,5 + chain: 251 (res: 3634) - ref2: 137) / tot:1080
+ITP proof remapped roots: 28 - eq nodes: 93 - tot: 186
+ROOT stats - zero: 255 - one: 495 - lit: 26 - clause: 0
+ITP proof core: (root: 28,0 + chain: 158 (res: 574) - ref2: 88) / tot:186
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 28,0 + chain: 158 (res: 574) - ref2: 88) / tot:186
+ITP proof remapped roots: 36 - eq nodes: 8 - tot: 180
+ROOT stats - zero: 0 - one: 0 - lit: 26 - clause: 0
+ITP proof core: (root: 36,0 + chain: 144 (res: 542) - ref2: 83) / tot:180
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 36,0 + chain: 144 (res: 542) - ref2: 83) / tot:180
+ITP proof remapped roots: 36 - eq nodes: 0 - tot: 179
+ROOT stats - zero: 0 - one: 0 - lit: 26 - clause: 8
+ITP proof core: (root: 36,0 + chain: 143 (res: 541) - ref2: 83) / tot:179
+ITP proof dupv: 0 - implNodesOdc: 85
+ITP proof core: (root: 36,0 + chain: 143 (res: 456) - ref2: 83) / tot:179
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[OR:5]: 338 -> 328
+TOT NNF SIMPL: 328 -> (abcBal: 234) -> 171 (2 iterations)
+RERUN PARTIAL ITP SIZE: 171 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.00 s (norm 0.00 s))
+Solver RERUN1 stats: 9389/781 vars/clauses
+RERUN1 proof has size size 364
+Solver RERUN1 stats: 13254/22281/303 dec./prop./confl.
+
+CHECK Solver Validation time = 0.00 s (norm 0.00 s))
+RERUN Solver Replay time = 0.01 s (norm 0.00 s))
+RERUN Solver res: 891 - resolvents: 272
+# A cl: 172/566
+ITP proof core: (root: 564,4 + chain: 101 (res: 1975) - ref2: 68) / tot:697
+ITP proof remapped roots: 26 - eq nodes: 28 - tot: 99
+ROOT stats - zero: 148 - one: 390 - lit: 24 - clause: 0
+ITP proof core: (root: 26,0 + chain: 73 (res: 209) - ref2: 46) / tot:99
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 26,0 + chain: 73 (res: 209) - ref2: 46) / tot:99
+ITP proof remapped roots: 31 - eq nodes: 1 - tot: 99
+ROOT stats - zero: 0 - one: 0 - lit: 24 - clause: 0
+ITP proof core: (root: 27,0 + chain: 68 (res: 198) - ref2: 46) / tot:99
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 27,0 + chain: 68 (res: 198) - ref2: 46) / tot:99
+ITP proof remapped roots: 27 - eq nodes: 0 - tot: 94
+ROOT stats - zero: 0 - one: 0 - lit: 20 - clause: 5
+ITP proof core: (root: 27,0 + chain: 67 (res: 197) - ref2: 45) / tot:94
+ITP proof dupv: 0 - implNodesOdc: 4
+ITP proof core: (root: 27,0 + chain: 67 (res: 193) - ref2: 45) / tot:94
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:10]: 165 -> 139
+TOT NNF SIMPL: 139 -> (abcBal: 111) -> 106 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 106
+
+NNF PBA Solver time = 0.00 s (norm 0.00 s))
+NNF PBA Solver stats: 9461/14464/161 dec./prop./confl.
+NNF PBA Solver Validation time = 0.00 s (norm 0.00 s))
+# AIG core -> gates: 67 / 112 (maxCut: 0)
+NNF PBA size: 106 -> 63
+# A cl: 281/781
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 302616
+itp stats: clause terms/a/o/ao -> 210/0/0/210 - A nodes: 0 (and->or): 32767
+itp opt: 63 -> 63
+4/6 (r:2) INDUCTIVE components found in TO+ (size: 59)
+|to simplify: 63->59|.
+TO: 59 (supp: 17) - AIG nodes 302607
+TO*TO+: 112 (supp: 29)
+|to:112|.
+|to&oldTo:4717|.
+   |tr|=19026 |reached|=126715.
+*** Trav time: 353.08 s (norm 275.76 s) ***
+ring 70 - safe for bound 10
+  Reusing SAME CONE ring
+fp chkTime: 10.50 s (norm 8.20 s)
+  Aig interpolant inner iteration 70: |from:22175| -> previous ring 71 - safe for bound 0
+FOUND 9(0 const) EQUIVALENCES - size 21404 -> 21395
+min/avg/max red id: 26/58/77
+FOUND 6 const REDUNDANCIES
+red size: 35 - F size 82 -> 82
+ring cone (e) - generated part[70/81] of size: 5387 - bound: 10
+DYN ABSTR (M22) KEPT 17/792 vars (time: 0.02 s (norm 0.02 s))
+computing interpolant in TO+
+ITP (|A|=3893,|B|=5391)
+ITP time limit: 10000
+Solver stats: 9267/9689 vars/clauses (elim v/cl:0/0)
+Solver stats: 12612/84129/2381 dec./prop./confl.
+Solver stats: time = 0.01 s (norm 0.01 s)
+Solver Validation time = 0.00 s (norm 0.00 s) - prop:119314
+Solver Replay time = 0.00 s (norm 0.00 s) - prop: 151943
+computing interpolant from refutation proof of size 2459 (AIG nodes: 302667)
+RES PROOF REMOVED 44 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 1245 resolutions
+RESTRUCT PROOF REMOVED 53 redundant resolutions
+RES PROOF PROCESSED: 809 A, 1403 B, 904 resA, 1237 resB, 52 res (tot: 4405)
+RES PROOF has 420 core and 3985 out of core nodes
+RES PROOF compacted from 4405 to 420 nodes
+RES PROOF SWAPPED 4 resolution vars
+resB: 0
+GET PROOF 196 A (0 resA) - 172 B (0 resB) - 52 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 52 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 196 A (0 resA) - 172 B (0 resB) - 52 res - 0 red
+# A cl: 196/368
+ITP proof core: (root: 370,0 + chain: 52 (res: 822) - ref2: 29) / tot:422
+ITP proof remapped roots: 17 - eq nodes: 15 - tot: 54
+ROOT stats - zero: 181 - one: 172 - lit: 15 - clause: 0
+ITP proof core: (root: 17,0 + chain: 37 (res: 90) - ref2: 18) / tot:54
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 17,0 + chain: 37 (res: 90) - ref2: 18) / tot:54
+ITP proof remapped roots: 19 - eq nodes: 1 - tot: 54
+ROOT stats - zero: 0 - one: 0 - lit: 15 - clause: 0
+ITP proof core: (root: 18,0 + chain: 35 (res: 87) - ref2: 17) / tot:54
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 18,0 + chain: 35 (res: 87) - ref2: 17) / tot:54
+ITP proof remapped roots: 20 - eq nodes: 0 - tot: 53
+ROOT stats - zero: 0 - one: 0 - lit: 15 - clause: 1
+ITP proof core: (root: 17,0 + chain: 33 (res: 83) - ref2: 16) / tot:53
+ITP proof dupv: 0 - implNodesOdc: 0
+ITP proof core: (root: 17,0 + chain: 33 (res: 83) - ref2: 16) / tot:53
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[OR:4]: 56 -> 54
+TOT NNF SIMPL: 54 -> (abcBal: 45) -> 43 (1 iterations)
+RERUN PARTIAL ITP SIZE: 43 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.00 s (norm 0.00 s))
+Solver RERUN1 stats: 9267/366 vars/clauses
+RERUN1 proof has size size 46
+Solver RERUN1 stats: 12232/12900/45 dec./prop./confl.
+
+CHECK Solver Validation time = 0.00 s (norm 0.00 s))
+RERUN Solver Replay time = 0.00 s (norm 0.00 s))
+RERUN Solver res: 267 - resolvents: 82
+# A cl: 104/113
+ITP proof core: (root: 114,1 + chain: 35 (res: 169) - ref2: 26) / tot:153
+ITP proof remapped roots: 12 - eq nodes: 18 - tot: 29
+ROOT stats - zero: 93 - one: 9 - lit: 10 - clause: 0
+ITP proof core: (root: 12,0 + chain: 17 (res: 34) - ref2: 11) / tot:29
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 12,0 + chain: 17 (res: 34) - ref2: 11) / tot:29
+ITP proof remapped roots: 14 - eq nodes: 0 - tot: 30
+ROOT stats - zero: 0 - one: 0 - lit: 10 - clause: 0
+ITP proof core: (root: 13,0 + chain: 16 (res: 33) - ref2: 10) / tot:30
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 13,0 + chain: 16 (res: 33) - ref2: 10) / tot:30
+ITP proof remapped roots: 14 - eq nodes: 0 - tot: 28
+ROOT stats - zero: 0 - one: 0 - lit: 10 - clause: 1
+ITP proof core: (root: 10,0 + chain: 14 (res: 28) - ref2: 9) / tot:28
+ITP proof dupv: 0 - implNodesOdc: 1
+ITP proof core: (root: 10,0 + chain: 14 (res: 27) - ref2: 9) / tot:28
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[OR:9]: 37 -> 23
+TOT NNF SIMPL: 23 -> (abcBal: 19) -> 19 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 19
+
+NNF PBA Solver time = 0.00 s (norm 0.00 s))
+NNF PBA Solver stats: 0/38/0 dec./prop./confl.
+NNF PBA Solver Validation time = 0.00 s (norm 0.00 s))
+# AIG core -> gates: 19 / 19 (maxCut: 0)
+NNF PBA size: 19 -> 19
+# A cl: 196/368
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 302673
+itp stats: clause terms/a/o/ao -> 47/0/0/47 - A nodes: 0 (and->or): 32767
+itp opt: 19 -> 19
+TO: 19 (supp: 10) - AIG nodes 302667
+TO*TO+: 98 (supp: 33)
+|to:98|.
+|to&oldTo:4677|.
+   |tr|=19026 |reached|=127911.
+*** Trav time: 365.43 s (norm 285.40 s) ***
+ring 71 - safe for bound 10
+  Reusing SAME CONE ring
+fp chkTime: 22.35 s (norm 17.45 s)
+  Aig interpolant inner iteration 71: |from:22138| -> previous ring 72 - safe for bound 0
+FOUND 14(0 const) EQUIVALENCES - size 21372 -> 21358
+min/avg/max red id: 21/31/37
+FOUND 6 const REDUNDANCIES
+red size: 30 - F size 38 -> 38
+ring cone (e) - generated part[71/82] of size: 5372 - bound: 10
+Inner loop REACHES back cone.
+
+try ITP ref. # 2/16 - cone/constr 0 of size: 3 - ring: 82 (rl: 0)
+ITP ref. chk[71] - cone sz: 7653 - fwd ring: 4677
+RING CONSTR: [74]&3039
+ITP ref. chk[70] - cone sz: 32355 - fwd ring: 4717
+refinement possible at level 70
+
+Interpolant FINITE RUN: cone=3, care=0.
+fp chkTime: 8.04 s (norm 6.28 s)
+  Aig interpolant inner iteration 70: |from:22175| -> previous ring 71 - safe for bound 10
+min/avg/max red id: 35/61/77
+FOUND 6 const REDUNDANCIES
+red size: 35 - F size 82 -> 82
+ring cone (e) - generated part[70/83] of size: 7653 - bound: 12
+DYN ABSTR (M22) KEPT 92/795 vars (time: 0.12 s (norm 0.10 s))
+computing interpolant in TO+
+ITP (|A|=4499,|B|=7721)
+ITP time limit: 10000
+Solver stats: 12128/13979 vars/clauses (elim v/cl:0/0)
+Solver stats: 45772/619107/8031 dec./prop./confl.
+Solver stats: time = 0.08 s (norm 0.06 s)
+Solver Validation time = 0.04 s (norm 0.03 s) - prop:1040646
+Solver Replay time = 0.05 s (norm 0.04 s) - prop: 1408878
+computing interpolant from refutation proof of size 9515 (AIG nodes: 337374)
+RES PROOF REMOVED 1858 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 3450 resolutions
+RESTRUCT PROOF REMOVED 530 redundant resolutions
+RES PROOF PROCESSED: 1216 A, 4253 B, 268 resA, 4955 resB, 1440 res (tot: 12132)
+RES PROOF has 5799 core and 6333 out of core nodes
+RES PROOF compacted from 12132 to 5794 nodes
+RES PROOF SWAPPED 167 resolution vars
+resB: 0
+GET PROOF 1224 A (0 resA) - 3135 B (0 resB) - 1435 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 1435 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 1224 A (0 resA) - 3135 B (0 resB) - 1435 res - 0 red
+# A cl: 1224/4359
+ITP proof core: (root: 4110,251 + chain: 1251 (res: 24428) - ref2: 814) / tot:5796
+ITP proof remapped roots: 151 - eq nodes: 354 - tot: 1048
+ROOT stats - zero: 1017 - one: 2942 - lit: 149 - clause: 0
+ITP proof core: (root: 151,0 + chain: 897 (res: 2493) - ref2: 602) / tot:1048
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 151,0 + chain: 897 (res: 2493) - ref2: 602) / tot:1048
+ITP proof remapped roots: 238 - eq nodes: 107 - tot: 955
+ROOT stats - zero: 0 - one: 0 - lit: 149 - clause: 0
+ITP proof core: (root: 213,0 + chain: 717 (res: 2150) - ref2: 487) / tot:955
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 213,0 + chain: 717 (res: 2150) - ref2: 487) / tot:955
+ITP proof remapped roots: 224 - eq nodes: 42 - tot: 888
+ROOT stats - zero: 0 - one: 0 - lit: 124 - clause: 87
+ITP proof core: (root: 219,0 + chain: 664 (res: 2033) - ref2: 454) / tot:888
+ITP proof dupv: 0 - implNodesOdc: 240
+ITP proof core: (root: 219,0 + chain: 664 (res: 1793) - ref2: 454) / tot:888
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:23]: 1215 -> 1068
+TOT NNF SIMPL: 1068 -> (abcBal: 957) -> 885 (1 iterations)
+RERUN PARTIAL ITP SIZE: 885 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.01 s (norm 0.01 s))
+Solver RERUN1 stats: 12128/4359 vars/clauses
+RERUN1 proof has size size 1641
+Solver RERUN1 stats: 22303/93552/1352 dec./prop./confl.
+
+CHECK Solver Validation time = 0.01 s (norm 0.01 s))
+RERUN Solver Replay time = 0.01 s (norm 0.01 s))
+RERUN Solver res: 4019 - resolvents: 1250
+# A cl: 175/1868
+ITP proof core: (root: 1840,30 + chain: 321 (res: 10212) - ref2: 223) / tot:2236
+ITP proof remapped roots: 28 - eq nodes: 145 - tot: 204
+ROOT stats - zero: 149 - one: 1663 - lit: 26 - clause: 0
+ITP proof core: (root: 28,0 + chain: 176 (res: 616) - ref2: 120) / tot:204
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 28,0 + chain: 176 (res: 616) - ref2: 120) / tot:204
+ITP proof remapped roots: 39 - eq nodes: 15 - tot: 176
+ROOT stats - zero: 0 - one: 0 - lit: 26 - clause: 0
+ITP proof core: (root: 36,0 + chain: 137 (res: 510) - ref2: 96) / tot:176
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 36,0 + chain: 137 (res: 510) - ref2: 96) / tot:176
+ITP proof remapped roots: 38 - eq nodes: 0 - tot: 171
+ROOT stats - zero: 0 - one: 0 - lit: 23 - clause: 11
+ITP proof core: (root: 34,0 + chain: 133 (res: 499) - ref2: 95) / tot:171
+ITP proof dupv: 0 - implNodesOdc: 95
+ITP proof core: (root: 34,0 + chain: 133 (res: 404) - ref2: 95) / tot:171
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:18]: 268 -> 145
+TOT NNF SIMPL: 145 -> (abcBal: 104) -> 99 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 99
+
+NNF PBA Solver time = 0.00 s (norm 0.00 s))
+NNF PBA Solver stats: 11895/30085/297 dec./prop./confl.
+NNF PBA Solver Validation time = 0.01 s (norm 0.00 s))
+# AIG core -> gates: 54 / 102 (maxCut: 0)
+NNF PBA size: 99 -> 52
+# A cl: 1224/4359
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 337462
+itp stats: clause terms/a/o/ao -> 797/0/0/797 - A nodes: 0 (and->or): 32767
+itp opt: 52 -> 52
+4/5 (r:1) INDUCTIVE components found in TO+ (size: 45)
+|to simplify: 52->45|.
+TO: 45 (supp: 19) - AIG nodes 337449
+TO*TO+: 68 (supp: 24)
+|to:68|.
+|to&oldTo:4716|.
+   |tr|=19026 |reached|=127943.
+*** Trav time: 406.11 s (norm 317.17 s) ***
+ring 71 - safe for bound 12
+  Reusing SAME CONE ring
+FWD ITP fix-point at depth 71
+BWD fix point at bound 0.
+Lazy Pass at Depth 0.
+-- TRAV Manager Quit.
+Verification Result: PASS.
+Result Written to File 6s35.pdtrav.out.
+-- FSM Manager Quit.
+-- FSM Manager Quit.
+Total used memory: 48.68 MBytes
+Total Verification Time: 428.07 s (norm 334.32 s)
+-- DDI Manager Quit.
+Total Execution Time: 428.88 s (norm 334.96 s)
+## PdTRAV End.
