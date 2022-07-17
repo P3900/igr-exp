@@ -1,0 +1,1949 @@
+c ## Tool Version: PdTRAV 3.5.0
+c ## DD Version: Cudd-2.5.0
+c ## Compile Date: sab 26 mar 2022, 12.00.22, CET
+c ## Command: pdt40t -strategy igra3ie -itpAigCore 1000 -itpCore 1000 -verbosity 4 -igrSide 0 -itpExactBoundDouble 0 -satTimeLimit 300 -itpDrup 3 ../aig/oc8051gm3bacc.aig 
+## Running Date: Sat Jul 16 11:35:32 2022
+## Hostname: gpcserver-VirtualBox
+CPU time adjustment: 0.40 s (norm 0.42 s) - scale factor: 0.940000
+-- DDI Manager Init.
+-- FSM Manager Init.
+-- FSM Loading.
+(Loading File ../aig/oc8051gm3bacc.aig).
+Property: !o0.
+Design Statistics: 364 Inputs / 934 State Vars / 12055 delta AIG Gates / 3969 lambda AIG Gates
+|Constraint|=0 nodes.
+|Property|=3969 nodes.
+|Constraint|=0 nodes.
+-- FSM Manager Init.
+Warning: l840 has Constant Input with Different Init Value.
+Found 1 Peripheral Latches (1 1 s.) - 934 Latches Remaining.
+  Peripheral Latch Reduction; Delta Size: 12064 -> 11551.
+Found 0 Peripheral Latches (0 1 s.) - 934 Latches Remaining.
+  Peripheral Latch Reduction; Delta Size: 11551 -> 11551.
+-- TRAV Manager Init.
+COI Reduction Performed: Kept 935 State Vars out of 935.
+Original Delta: Size=11551; #Partitions=935.
+Reduced Delta: Size=11551; #Partitions=935.
+Original Delta: Size=11551; #Partitions=935.
+Original Delta: Size=11551; #Partitions=935.
+Ternary Simulation: (1539)(1539)(1539)(1539)(1539)(1475)(1475)(1475)(1459)(1379)(1195)(103)(17)(11)(11)(11)TSIM found 8 EQUIVALENCES
+Original Delta: Size=11544; #Partitions=935.
+
+Ternary Simulation Performed: 16 iterations in 0.01 s; |R|=5259.
+COI Reduction Performed: Kept 935 State Vars out of 935.
+Original Delta: Size=11544; #Partitions=935.
+Reduced Delta: Size=11544; #Partitions=935.
+Circuit AIG stats: 190 inp / 935 state vars / 11544 AIG gates.
+Reduction run time: 0.0.
+Invarspec: 3.
+Init: 0.
+129 stalled latches found
+STEP: 0.
+lazyRate: 1.000000 - itpOpt: 0 - optLevel: 1.
+Using bwd cone at bound 0 (cone(aux): 3(0) - care: 0).
+{COI: 1} curr NODE ID: 88388, baig Nodes: 46993.
+ BMC (AIG size: 0/3/3) Full Cone (Aux): 3(0))
+Interpolant FINITE RUN: cone=3, care=0.
+fp chkTime: 0.01 s (norm 0.01 s)
+  Aig interpolant inner iteration 0: |from:2584| -> ternary to+: 1539
+TO+IMG-cube: 770 (f:2584->1044)
+FOUND 32(0 const) EQUIVALENCES - size 1044 -> 916
+computing interpolant in TO+
+TO: 1731 (supp: 834) - AIG nodes 49320
+TO*TO+: 2501 (supp: 834)
+|to:2501|.
+   |tr|=2582 |reached|=2501.
+*** Trav time: 0.20 s (norm 0.22 s) ***
+ring 1 - safe for bound 0
+fp chkTime: 0.01 s (norm 0.01 s)
+  Aig interpolant inner iteration 1: |from:4293| -> ternary to+: 1539
+TO+IMG-cube: 770 (f:4293->2753)
+FOUND 32(0 const) EQUIVALENCES - size 2753 -> 2681
+computing interpolant in TO+
+TO: 1731 (supp: 834) - AIG nodes 52330
+TO*TO+: 2501 (supp: 834)
+|to:2501|.
+   |tr|=16212 |reached|=3536.
+*** Trav time: 0.45 s (norm 0.48 s) ***
+ring 2 - safe for bound 0
+fp chkTime: 0.01 s (norm 0.01 s)
+  Aig interpolant inner iteration 2: |from:4294| -> ternary to+: 1539
+TO+IMG-cube: 770 (f:4294->2754)
+FOUND 32(0 const) EQUIVALENCES - size 2754 -> 2682
+computing interpolant in TO+
+TO: 1731 (supp: 834) - AIG nodes 53296
+TO*TO+: 2501 (supp: 834)
+|to:2501|.
+   |tr|=16212 |reached|=4501.
+*** Trav time: 0.69 s (norm 0.73 s) ***
+ring 3 - safe for bound 0
+fp chkTime: 0.01 s (norm 0.01 s)
+  Aig interpolant inner iteration 3: |from:4294| -> ternary to+: 1539
+TO+IMG-cube: 770 (f:4294->2754)
+FOUND 32(0 const) EQUIVALENCES - size 2754 -> 2682
+computing interpolant in TO+
+TO: 1731 (supp: 834) - AIG nodes 54099
+TO*TO+: 2501 (supp: 834)
+|to:2501|.
+   |tr|=16212 |reached|=5306.
+*** Trav time: 0.91 s (norm 0.96 s) ***
+ring 4 - safe for bound 0
+fp chkTime: 0.02 s (norm 0.02 s)
+  Aig interpolant inner iteration 4: |from:4288| -> ternary to+: 1539
+TO+IMG-cube: 770 (f:4288->2748)
+FOUND 32(0 const) EQUIVALENCES - size 2748 -> 2676
+computing interpolant in TO+
+TO: 1731 (supp: 834) - AIG nodes 54903
+TO*TO+: 2501 (supp: 834)
+|to:2501|.
+   |tr|=16212 |reached|=6108.
+*** Trav time: 1.14 s (norm 1.21 s) ***
+ring 5 - safe for bound 0
+fp chkTime: 0.02 s (norm 0.02 s)
+  Aig interpolant inner iteration 5: |from:4294| -> ternary to+: 1539
+TO+IMG-cube: 770 (f:4294->2754)
+FOUND 32(0 const) EQUIVALENCES - size 2754 -> 2682
+computing interpolant in TO+
+TO: 1731 (supp: 834) - AIG nodes 55705
+TO*TO+: 2501 (supp: 834)
+|to:2501|.
+   |tr|=16212 |reached|=6911.
+*** Trav time: 1.35 s (norm 1.43 s) ***
+ring 6 - safe for bound 0
+fp chkTime: 0.02 s (norm 0.02 s)
+  Aig interpolant inner iteration 6: |from:4390| -> ternary to+: 1475
+TO+IMG-cube: 738 (f:4390->2914)
+FOUND 64(0 const) EQUIVALENCES - size 2914 -> 2818
+computing interpolant in TO+
+TO: 1859 (supp: 866) - AIG nodes 56961
+TO*TO+: 2597 (supp: 866)
+|to:2597|.
+   |tr|=16212 |reached|=8010.
+*** Trav time: 1.59 s (norm 1.69 s) ***
+ring 7 - safe for bound 0
+fp chkTime: 0.02 s (norm 0.03 s)
+  Aig interpolant inner iteration 7: |from:4478| -> ternary to+: 1475
+TO+IMG-cube: 738 (f:4478->3002)
+FOUND 64(0 const) EQUIVALENCES - size 3002 -> 2906
+computing interpolant in TO+
+TO: 1859 (supp: 866) - AIG nodes 57781
+TO*TO+: 2597 (supp: 866)
+|to:2597|.
+   |tr|=16212 |reached|=8910.
+*** Trav time: 1.81 s (norm 1.92 s) ***
+ring 8 - safe for bound 0
+fp chkTime: 0.02 s (norm 0.02 s)
+  Aig interpolant inner iteration 8: |from:4478| -> ternary to+: 1475
+TO+IMG-cube: 738 (f:4478->3002)
+FOUND 64(0 const) EQUIVALENCES - size 3002 -> 2906
+computing interpolant in TO+
+TO: 1859 (supp: 866) - AIG nodes 58596
+TO*TO+: 2597 (supp: 866)
+|to:2597|.
+   |tr|=16212 |reached|=9725.
+*** Trav time: 2.04 s (norm 2.17 s) ***
+ring 9 - safe for bound 0
+fp chkTime: 0.02 s (norm 0.03 s)
+  Aig interpolant inner iteration 9: |from:4510| -> ternary to+: 1459
+TO+IMG-cube: 730 (f:4510->3050)
+FOUND 72(0 const) EQUIVALENCES - size 3050 -> 2938
+computing interpolant in TO+
+TO: 1881 (supp: 866) - AIG nodes 59583
+TO*TO+: 2611 (supp: 866)
+|to:2611|.
+   |tr|=16212 |reached|=10704.
+*** Trav time: 2.27 s (norm 2.41 s) ***
+ring 10 - safe for bound 0
+fp chkTime: 0.03 s (norm 0.03 s)
+  Aig interpolant inner iteration 10: |from:4652| -> ternary to+: 1379
+TO+IMG-cube: 690 (f:4652->3272)
+FOUND 112(0 const) EQUIVALENCES - size 3272 -> 3099
+computing interpolant in TO+
+TO: 2035 (supp: 898) - AIG nodes 62398
+TO*TO+: 2725 (supp: 898)
+|to:2725|.
+   |tr|=16212 |reached|=4203.
+*** Trav time: 2.59 s (norm 2.75 s) ***
+ring 11 - safe for bound 0
+fp chkTime: 0.02 s (norm 0.02 s)
+  Aig interpolant inner iteration 11: |from:5634| -> ternary to+: 1211
+TO+IMG-cube: 606 (f:5634->4422)
+FOUND 139(0 const) EQUIVALENCES - size 4422 -> 4195
+computing interpolant in TO+
+TO: 1996 (supp: 845) - AIG nodes 63481
+TO*TO+: 2602 (supp: 845)
+|to:2602|.
+   |tr|=16212 |reached|=5527.
+*** Trav time: 2.92 s (norm 3.11 s) ***
+ring 12 - safe for bound 0
+fp chkTime: 0.04 s (norm 0.04 s)
+  Aig interpolant inner iteration 12: |from:12393| -> ternary to+: 119
+TO+IMG-cube: 60 (f:12393->12273)
+FOUND 4(0 const) EQUIVALENCES - size 12273 -> 12263
+computing interpolant in TO+
+TO: 143 (supp: 68) - AIG nodes 64710
+TO*TO+: 203 (supp: 68)
+|to:203|.
+   |tr|=16212 |reached|=5661.
+*** Trav time: 3.80 s (norm 4.04 s) ***
+ring 13 - safe for bound 0
+fp chkTime: 0.06 s (norm 0.07 s)
+  Aig interpolant inner iteration 13: |from:15916| -> ternary to+: 17
+TO+IMG-cube: 9 (f:15916->15898)
+Inner loop REACHES back cone.
+
+try ITP ref. # 1/16 - cone/constr 0 of size: 3 - ring: 13 (rl: 0)
+ITP ref. chk[13] - cone sz: 3349 - fwd ring: 203
+ITP ref. chk[12] - cone sz: 8474 - fwd ring: 2602
+ITP ref. chk[11] - cone sz: 9028 - fwd ring: 2725
+refinement possible at level 11
+
+Interpolant FINITE RUN: cone=3, care=0.
+fp chkTime: 0.03 s (norm 0.03 s)
+  Aig interpolant inner iteration 11: |from:5652| -> previous ring 12 - safe for bound 0
+ring cone (e) - generated part[11/14] of size: 8447 - bound: 2
+DYN ABSTR (M22) KEPT 20/183 vars (time: 0.00 s (norm 0.00 s))
+ITP (|A|=2625,|B|=9047)
+ITP time limit: 10000
+Solver stats: 11652/16190 vars/clauses (elim v/cl:0/0)
+Solver stats: 0/2991/0 dec./prop./confl.
+Solver stats: time = 0.00 s (norm 0.00 s)
+ITP (|A|=2625,|B|=9047)
+ITP time limit: 10000
+Solver stats: 11652/14988 vars/clauses
+Solver stats: 0/2977/0(0) dec./prop./confl.(small)
+Solver stored decisions: 0
+Solver stats: time = 0.00 s (norm 0.00 s)
+computing interpolant from refutation proof of size 18781
+ITP proof unit res. cl,: 83(A:52/B:23/AB:8 - equiv:0)
+ITP proof two res. cl: 73(AB:20)
+ITP core: (567,2160 + 592) / 18782
+core size 566 vars / 601 clauses (res core: 34)
+Core   stats: 566/465 vars/clauses
+Core   stats: 0/564/0(0) dec./prop./confl.(small)
+Core   stats: time = 0.00 s (norm 0.00 s)
+computing interpolant from refutation proof of size 1161 (AIG nodes: 80869)
+ITP proof unit res. cl,: 483(A:242/B:229/AB:12 - equiv:1)
+ITP proof two res. cl: 70(AB:20)
+ITP core: (552,4 + 558) / 1162
+ITP proof core: (root: 554,0 + chain: 558 (res: 889) - ref2: 434) / tot:1164
+ITP proof remapped roots: 22 - eq nodes: 348 - tot: 232
+ROOT stats - zero: 285 - one: 247 - lit: 20 - clause: 0
+ITP proof core: (root: 22,0 + chain: 210 (res: 287) - ref2: 174) / tot:232
+ITP proof remapped roots: 22 - eq nodes: 12 - tot: 220
+ROOT stats - zero: 0 - one: 0 - lit: 20 - clause: 0
+ITP proof core: (root: 22,0 + chain: 198 (res: 268) - ref2: 163) / tot:220
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 22,0 + chain: 198 (res: 268) - ref2: 163) / tot:220
+ITP proof remapped roots: 38 - eq nodes: 0 - tot: 219
+ROOT stats - zero: 0 - one: 0 - lit: 20 - clause: 0
+ITP proof core: (root: 36,0 + chain: 181 (res: 245) - ref2: 151) / tot:219
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 36,0 + chain: 181 (res: 245) - ref2: 151) / tot:219
+ITP proof remapped roots: 50 - eq nodes: 0 - tot: 206
+ROOT stats - zero: 0 - one: 0 - lit: 18 - clause: 16
+ITP proof core: (root: 30,0 + chain: 156 (res: 215) - ref2: 135) / tot:206
+ITP proof dupv: 0 - implNodesOdc: 4
+ITP proof core: (root: 30,0 + chain: 156 (res: 211) - ref2: 135) / tot:206
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 81039
+interpolant stats: clause terms/a/o/ao -> 156/0/0/156 - A nodes: 156 (and->or): 1063179122
+ANALYZE CORE found 273/566 in core out of 9047 nodes
+itp opt: 189 -> 189
+itp opt: 189 -> 189
+12/13 (r:1) INDUCTIVE components found in TO+ (size: 83)
+|to simplify: 189->83|.
+TO: 83 (supp: 20) - AIG nodes 80930
+TO*TO+: 83 (supp: 20)
+|to:83|.
+|to&oldTo:2678|.
+   |tr|=16212 |reached|=4614.
+*** Trav time: 4.83 s (norm 5.13 s) ***
+ring 12 - safe for bound 2
+  Reusing SAME CONE ring
+fp chkTime: 0.04 s (norm 0.04 s)
+  Aig interpolant inner iteration 12: |from:12434| -> previous ring 13 - safe for bound 0
+ring cone (e) - generated part[12/15] of size: 11137 - bound: 2
+DYN ABSTR (M22) KEPT 115/826 vars (time: 0.01 s (norm 0.01 s))
+ITP (|A|=5978,|B|=11201)
+ITP time limit: 10000
+Solver stats: 17064/25617 vars/clauses (elim v/cl:0/0)
+Solver stats: 1537/94106/514 dec./prop./confl.
+Solver stats: time = 0.01 s (norm 0.01 s)
+Solver Validation time = 0.00 s (norm 0.00 s) - prop:231249
+Solver Replay time = 0.00 s (norm 0.00 s) - prop: 296586
+computing interpolant from refutation proof of size 515 (AIG nodes: 85638)
+RES PROOF REMOVED 26 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 1790 resolutions
+RESTRUCT PROOF REMOVED 244 redundant resolutions
+RES PROOF PROCESSED: 1541 A, 1430 B, 259 resA, 503 resB, 256 res (tot: 3989)
+RES PROOF has 2559 core and 1430 out of core nodes
+RES PROOF compacted from 3989 to 2556 nodes
+RES PROOF SWAPPED 235 resolution vars
+resB: 0
+GET PROOF 1221 A (0 resA) - 1082 B (0 resB) - 253 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 253 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 1221 A (0 resA) - 1082 B (0 resB) - 253 res - 0 red
+# A cl: 1221/2303
+ITP proof core: (root: 2299,6 + chain: 218 (res: 7259) - ref2: 112) / tot:2558
+ITP proof remapped roots: 123 - eq nodes: 46 - tot: 295
+ROOT stats - zero: 1097 - one: 1079 - lit: 121 - clause: 0
+ITP proof core: (root: 123,0 + chain: 172 (res: 697) - ref2: 88) / tot:295
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 123,0 + chain: 172 (res: 697) - ref2: 88) / tot:295
+ITP proof remapped roots: 157 - eq nodes: 2 - tot: 294
+ROOT stats - zero: 0 - one: 0 - lit: 121 - clause: 0
+ITP proof core: (root: 121,0 + chain: 137 (res: 609) - ref2: 77) / tot:294
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 121,0 + chain: 137 (res: 609) - ref2: 77) / tot:294
+ITP proof remapped roots: 123 - eq nodes: 0 - tot: 258
+ROOT stats - zero: 0 - one: 0 - lit: 85 - clause: 34
+ITP proof core: (root: 120,0 + chain: 135 (res: 607) - ref2: 75) / tot:258
+ITP proof dupv: 0 - implNodesOdc: 33
+ITP proof core: (root: 120,0 + chain: 135 (res: 574) - ref2: 75) / tot:258
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:2]: 641 -> 641
+TOT NNF SIMPL: 641 -> (abcBal: 546) -> 489 (2 iterations)
+RERUN PARTIAL ITP SIZE: 489 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.00 s (norm 0.00 s))
+Solver RERUN1 stats: 17064/2303 vars/clauses
+RERUN1 proof has size size 516
+Solver RERUN1 stats: 4202/47095/288 dec./prop./confl.
+
+CHECK Solver Validation time = 0.00 s (norm 0.00 s))
+RERUN Solver Replay time = 0.00 s (norm 0.00 s))
+RERUN Solver res: 3059 - resolvents: 922
+# A cl: 1161/2129
+ITP proof core: (root: 2127,4 + chain: 467 (res: 18172) - ref2: 276) / tot:3028
+ITP proof remapped roots: 122 - eq nodes: 156 - tot: 433
+ROOT stats - zero: 1038 - one: 967 - lit: 120 - clause: 0
+ITP proof core: (root: 122,0 + chain: 311 (res: 1605) - ref2: 176) / tot:433
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 122,0 + chain: 311 (res: 1605) - ref2: 176) / tot:433
+ITP proof remapped roots: 153 - eq nodes: 12 - tot: 426
+ROOT stats - zero: 0 - one: 0 - lit: 120 - clause: 0
+ITP proof core: (root: 153,0 + chain: 273 (res: 1430) - ref2: 163) / tot:426
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 153,0 + chain: 273 (res: 1430) - ref2: 163) / tot:426
+ITP proof remapped roots: 154 - eq nodes: 0 - tot: 427
+ROOT stats - zero: 0 - one: 0 - lit: 120 - clause: 31
+ITP proof core: (root: 154,0 + chain: 273 (res: 1429) - ref2: 163) / tot:427
+ITP proof dupv: 0 - implNodesOdc: 81
+ITP proof core: (root: 154,0 + chain: 273 (res: 1348) - ref2: 163) / tot:427
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[OR:11]: 1273 -> 1202
+TOT NNF SIMPL: 1202 -> (abcBal: 933) -> 838 (2 iterations)
+RERUN PARTIAL ITP2 SIZE: 838
+
+NNF PBA Solver time = 0.00 s (norm 0.00 s))
+NNF PBA Solver stats: 1125/43338/271 dec./prop./confl.
+NNF PBA Solver Validation time = 0.00 s (norm 0.00 s))
+# AIG core -> gates: 609 / 865 (maxCut: 0)
+NNF PBA size: 838 -> 584
+# A cl: 1221/2303
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 86191
+itp stats: clause terms/a/o/ao -> 408/0/0/408 - A nodes: 0 (and->or): 32766
+itp opt: 584 -> 584
+TO: 584 (supp: 96) - AIG nodes 86191
+TO*TO+: 584 (supp: 96)
+|to:584|.
+|to&oldTo:788|.
+   |tr|=16212 |reached|=5215.
+*** Trav time: 6.07 s (norm 6.45 s) ***
+ring 13 - safe for bound 2
+  Reusing SAME CONE ring
+fp chkTime: 0.05 s (norm 0.06 s)
+  Aig interpolant inner iteration 13: |from:16388| -> ternary to+: 17
+TO+IMG-cube: 9 (f:16388->16370)
+ring cone (e) - generated part[13/16] of size: 11394 - bound: 2
+Inner loop REACHES back cone.
+
+try ITP ref. # 2/16 - cone/constr 0 of size: 3 - ring: 16 (rl: 0)
+ITP ref. chk[13] - cone sz: 31184 - fwd ring: 788
+RING CONSTR: [13]&788
+ITP ref. chk[12] - cone sz: 38591 - fwd ring: 2678
+RING CONSTR: [12]&2678
+ITP ref. chk[11] - cone sz: 38754 - fwd ring: 2725
+refinement possible at level 11
+
+Interpolant FINITE RUN: cone=3, care=0.
+fp chkTime: 0.03 s (norm 0.03 s)
+  Aig interpolant inner iteration 11: |from:5651| -> previous ring 12 - safe for bound 2
+ring cone (e) - generated part[11/17] of size: 38101 - bound: 5
+DYN ABSTR (M22) KEPT 53/183 vars (time: 0.09 s (norm 0.10 s))
+ITP (|A|=5067,|B|=38764)
+ITP time limit: 10000
+Solver stats: 43778/70541 vars/clauses (elim v/cl:0/0)
+Solver stats: 15878/2314115/4957 dec./prop./confl.
+Solver stats: time = 0.17 s (norm 0.18 s)
+Solver Validation time = 0.12 s (norm 0.13 s) - prop:4915875
+Solver Replay time = 0.08 s (norm 0.08 s) - prop: 5935192
+computing interpolant from refutation proof of size 5762 (AIG nodes: 141137)
+RES PROOF REMOVED 2322 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 5692 resolutions
+RESTRUCT PROOF REMOVED 1501 redundant resolutions
+RES PROOF PROCESSED: 2111 A, 7721 B, 1081 resA, 3265 resB, 1894 res (tot: 16072)
+RES PROOF has 8380 core and 7692 out of core nodes
+RES PROOF compacted from 16072 to 8379 nodes
+RES PROOF SWAPPED 921 resolution vars
+resB: 0
+GET PROOF 1037 A (0 resA) - 5449 B (0 resB) - 1893 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 1893 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 1037 A (0 resA) - 5449 B (0 resB) - 1893 res - 0 red
+# A cl: 1037/6486
+ITP proof core: (root: 6344,144 + chain: 1409 (res: 67754) - ref2: 783) / tot:8381
+ITP proof remapped roots: 80 - eq nodes: 653 - tot: 836
+ROOT stats - zero: 953 - one: 5311 - lit: 78 - clause: 0
+ITP proof core: (root: 80,0 + chain: 756 (res: 3314) - ref2: 425) / tot:836
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 80,0 + chain: 756 (res: 3314) - ref2: 425) / tot:836
+ITP proof remapped roots: 91 - eq nodes: 63 - tot: 776
+ROOT stats - zero: 0 - one: 0 - lit: 78 - clause: 0
+ITP proof core: (root: 88,0 + chain: 685 (res: 3176) - ref2: 395) / tot:776
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 88,0 + chain: 685 (res: 3176) - ref2: 395) / tot:776
+ITP proof remapped roots: 89 - eq nodes: 1 - tot: 771
+ROOT stats - zero: 0 - one: 0 - lit: 76 - clause: 10
+ITP proof core: (root: 89,0 + chain: 682 (res: 3173) - ref2: 394) / tot:771
+ITP proof dupv: 0 - implNodesOdc: 679
+ITP proof core: (root: 89,0 + chain: 682 (res: 2494) - ref2: 394) / tot:771
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:44]: 2052 -> 679
+TOT NNF SIMPL: 679 -> (abcBal: 555) -> 494 (2 iterations)
+RERUN PARTIAL ITP SIZE: 494 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.01 s (norm 0.01 s))
+Solver RERUN1 stats: 43778/6486 vars/clauses
+RERUN1 proof has size size 634
+Solver RERUN1 stats: 39725/236497/543 dec./prop./confl.
+
+CHECK Solver Validation time = 0.01 s (norm 0.01 s))
+RERUN Solver Replay time = 0.02 s (norm 0.02 s))
+RERUN Solver res: 5229 - resolvents: 779
+# A cl: 940/4102
+ITP proof core: (root: 4095,9 + chain: 325 (res: 29063) - ref2: 205) / tot:4636
+ITP proof remapped roots: 71 - eq nodes: 137 - tot: 259
+ROOT stats - zero: 864 - one: 3160 - lit: 69 - clause: 0
+ITP proof core: (root: 71,0 + chain: 188 (res: 891) - ref2: 120) / tot:259
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 71,0 + chain: 188 (res: 891) - ref2: 120) / tot:259
+ITP proof remapped roots: 84 - eq nodes: 27 - tot: 229
+ROOT stats - zero: 0 - one: 0 - lit: 69 - clause: 0
+ITP proof core: (root: 83,0 + chain: 145 (res: 822) - ref2: 95) / tot:229
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 83,0 + chain: 145 (res: 822) - ref2: 95) / tot:229
+ITP proof remapped roots: 88 - eq nodes: 1 - tot: 227
+ROOT stats - zero: 0 - one: 0 - lit: 68 - clause: 13
+ITP proof core: (root: 87,0 + chain: 139 (res: 811) - ref2: 92) / tot:227
+ITP proof dupv: 0 - implNodesOdc: 74
+ITP proof core: (root: 87,0 + chain: 139 (res: 737) - ref2: 92) / tot:227
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[OR:2]: 730 -> 726
+TOT NNF SIMPL: 726 -> (abcBal: 591) -> 572 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 572
+
+NNF PBA Solver time = 0.00 s (norm 0.00 s))
+NNF PBA Solver stats: 1046/65247/215 dec./prop./confl.
+NNF PBA Solver Validation time = 0.00 s (norm 0.00 s))
+# AIG core -> gates: 423 / 598 (maxCut: 0)
+NNF PBA size: 572 -> 397
+# A cl: 1037/6486
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 141481
+itp stats: clause terms/a/o/ao -> 821/0/0/821 - A nodes: 0 (and->or): 32766
+itp opt: 397 -> 397
+TO: 397 (supp: 47) - AIG nodes 141480
+TO*TO+: 397 (supp: 47)
+|to:397|.
+|to&oldTo:3049|.
+   |tr|=16212 |reached|=4940.
+*** Trav time: 8.70 s (norm 9.25 s) ***
+ring 12 - safe for bound 5
+  Reusing SAME CONE ring
+fp chkTime: 0.04 s (norm 0.04 s)
+  Aig interpolant inner iteration 12: |from:12762| -> previous ring 13 - safe for bound 2
+FOUND 9(7 const) EQUIVALENCES - size 12632 -> 12602
+min/avg/max red id: 969/1194/1420
+FOUND 2 const REDUNDANCIES
+red size: 92 - F size 1527 -> 1527
+ring cone (e) - generated part[12/18] of size: 41773 - bound: 5
+Inner loop REACHES back cone.
+
+try ITP ref. # 3/16 - cone/constr 0 of size: 3 - ring: 18 (rl: 0)
+ITP ref. chk[12] - cone sz: 59258 - fwd ring: 3049
+RING CONSTR: [13]&788
+ITP ref. chk[11] - cone sz: 60326 - fwd ring: 2725
+refinement possible at level 11
+
+Interpolant FINITE RUN: cone=3, care=0.
+fp chkTime: 0.03 s (norm 0.03 s)
+  Aig interpolant inner iteration 11: |from:5653| -> previous ring 12 - safe for bound 5
+ring cone (e) - generated part[11/19] of size: 59258 - bound: 7
+DYN ABSTR (M22) KEPT 70/183 vars (time: 0.52 s (norm 0.56 s))
+ITP (|A|=5470,|B|=60248)
+ITP time limit: 10000
+Solver stats: 65648/108387 vars/clauses (elim v/cl:0/0)
+Solver stats: 25349/7103482/8406 dec./prop./confl.
+Solver stats: time = 0.46 s (norm 0.49 s)
+Solver Validation time = 0.35 s (norm 0.37 s) - prop:14636530
+Solver Replay time = 0.22 s (norm 0.24 s) - prop: 17635678
+computing interpolant from refutation proof of size 10091 (AIG nodes: 183560)
+RES PROOF REMOVED 4199 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 9687 resolutions
+RESTRUCT PROOF REMOVED 2231 redundant resolutions
+RES PROOF PROCESSED: 2489 A, 16898 B, 1203 resA, 4863 resB, 2597 res (tot: 28050)
+RES PROOF has 16078 core and 11972 out of core nodes
+RES PROOF compacted from 28050 to 16078 nodes
+RES PROOF SWAPPED 851 resolution vars
+resB: 0
+GET PROOF 1345 A (0 resA) - 12136 B (0 resB) - 2597 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 2597 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 1345 A (0 resA) - 12136 B (0 resB) - 2597 res - 0 red
+# A cl: 1345/13481
+ITP proof core: (root: 13175,308 + chain: 781 (res: 141530) - ref2: 556) / tot:16080
+ITP proof remapped roots: 111 - eq nodes: 325 - tot: 567
+ROOT stats - zero: 1226 - one: 11838 - lit: 109 - clause: 0
+ITP proof core: (root: 111,0 + chain: 456 (res: 1943) - ref2: 308) / tot:567
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 111,0 + chain: 456 (res: 1943) - ref2: 308) / tot:567
+ITP proof remapped roots: 135 - eq nodes: 44 - tot: 526
+ROOT stats - zero: 0 - one: 0 - lit: 109 - clause: 0
+ITP proof core: (root: 132,0 + chain: 391 (res: 1818) - ref2: 270) / tot:526
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 132,0 + chain: 391 (res: 1818) - ref2: 270) / tot:526
+ITP proof remapped roots: 135 - eq nodes: 0 - tot: 521
+ROOT stats - zero: 0 - one: 0 - lit: 106 - clause: 24
+ITP proof core: (root: 134,0 + chain: 386 (res: 1811) - ref2: 269) / tot:521
+ITP proof dupv: 0 - implNodesOdc: 111
+ITP proof core: (root: 134,0 + chain: 386 (res: 1700) - ref2: 269) / tot:521
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:18]: 1450 -> 1409
+TOT NNF SIMPL: 1409 -> (abcBal: 1149) -> 1104 (1 iterations)
+RERUN PARTIAL ITP SIZE: 1104 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.05 s (norm 0.05 s))
+Solver RERUN1 stats: 65648/13481 vars/clauses
+RERUN1 proof has size size 1463
+Solver RERUN1 stats: 48957/685339/1045 dec./prop./confl.
+
+CHECK Solver Validation time = 0.06 s (norm 0.06 s))
+RERUN Solver Replay time = 0.06 s (norm 0.07 s))
+RERUN Solver res: 15326 - resolvents: 4479
+# A cl: 1111/9436
+ITP proof core: (root: 9224,214 + chain: 1917 (res: 89562) - ref2: 1305) / tot:13349
+ITP proof remapped roots: 98 - eq nodes: 993 - tot: 1022
+ROOT stats - zero: 1009 - one: 8117 - lit: 96 - clause: 0
+ITP proof core: (root: 98,0 + chain: 924 (res: 3370) - ref2: 689) / tot:1022
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 98,0 + chain: 924 (res: 3370) - ref2: 689) / tot:1022
+ITP proof remapped roots: 131 - eq nodes: 106 - tot: 923
+ROOT stats - zero: 0 - one: 0 - lit: 96 - clause: 0
+ITP proof core: (root: 129,0 + chain: 792 (res: 3152) - ref2: 603) / tot:923
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 129,0 + chain: 792 (res: 3152) - ref2: 603) / tot:923
+ITP proof remapped roots: 134 - eq nodes: 0 - tot: 920
+ROOT stats - zero: 0 - one: 0 - lit: 95 - clause: 32
+ITP proof core: (root: 134,0 + chain: 786 (res: 3138) - ref2: 599) / tot:920
+ITP proof dupv: 0 - implNodesOdc: 688
+ITP proof core: (root: 134,0 + chain: 786 (res: 2450) - ref2: 599) / tot:920
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:27]: 1484 -> 1053
+TOT NNF SIMPL: 1053 -> (abcBal: 818) -> 799 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 799
+
+NNF PBA Solver time = 0.02 s (norm 0.03 s))
+NNF PBA Solver stats: 2535/320087/581 dec./prop./confl.
+NNF PBA Solver Validation time = 0.02 s (norm 0.03 s))
+# AIG core -> gates: 575 / 844 (maxCut: 0)
+NNF PBA size: 799 -> 535
+# A cl: 1345/13481
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 183999
+itp stats: clause terms/a/o/ao -> 1172/0/0/1172 - A nodes: 0 (and->or): 32766
+itp opt: 535 -> 535
+19/19 (r:0) INDUCTIVE components found in TO+ (size: 535)
+TO: 535 (supp: 60) - AIG nodes 183997
+TO*TO+: 535 (supp: 60)
+|to:535|.
+|to&oldTo:3501|.
+   |tr|=16212 |reached|=5387.
+*** Trav time: 14.35 s (norm 15.25 s) ***
+ring 12 - safe for bound 7
+  Reusing SAME CONE ring
+fp chkTime: 0.04 s (norm 0.05 s)
+  Aig interpolant inner iteration 12: |from:13228| -> previous ring 13 - safe for bound 2
+FOUND 15(13 const) EQUIVALENCES - size 13098 -> 13044
+min/avg/max red id: 896/1312/1831
+FOUND 3 const REDUNDANCIES
+red size: 94 - F size 1954 -> 1954
+ring cone (e) - generated part[12/20] of size: 62941 - bound: 7
+Inner loop REACHES back cone.
+
+try ITP ref. # 4/16 - cone/constr 0 of size: 3 - ring: 20 (rl: 0)
+ITP ref. chk[12] - cone sz: 80445 - fwd ring: 3501
+ITP ref. chk[11] - cone sz: 81019 - fwd ring: 2725
+refinement possible at level 11
+
+Interpolant FINITE RUN: cone=3, care=0.
+fp chkTime: 0.03 s (norm 0.04 s)
+  Aig interpolant inner iteration 11: |from:5659| -> previous ring 12 - safe for bound 7
+ring cone (e) - generated part[11/21] of size: 80438 - bound: 9
+DYN ABSTR (M22) KEPT 66/183 vars (time: 2.57 s (norm 2.74 s))
+ITP (|A|=5411,|B|=81867)
+ITP time limit: 10000
+Solver stats: 87212/146123 vars/clauses (elim v/cl:0/0)
+Solver stats: 53909/31970513/22880 dec./prop./confl.
+Solver stats: time = 2.17 s (norm 2.31 s)
+Solver Validation time = 2.44 s (norm 2.59 s) - prop:78701442
+Solver Replay time = 1.67 s (norm 1.77 s) - prop: 100467997
+computing interpolant from refutation proof of size 25236 (AIG nodes: 225973)
+RES PROOF REMOVED 43640 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 59444 resolutions
+RESTRUCT PROOF REMOVED 11709 redundant resolutions
+RES PROOF PROCESSED: 2375 A, 27878 B, 1161 resA, 12437 resB, 5096 res (tot: 48947)
+RES PROOF has 32238 core and 16709 out of core nodes
+RES PROOF compacted from 48947 to 32230 nodes
+RES PROOF SWAPPED 383 resolution vars
+resB: 0
+GET PROOF 1208 A (0 resA) - 25934 B (0 resB) - 5088 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 5088 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 1208 A (0 resA) - 25934 B (0 resB) - 5088 res - 0 red
+# A cl: 1208/27142
+ITP proof core: (root: 26979,165 + chain: 4698 (res: 1004805) - ref2: 3320) / tot:32232
+ITP proof remapped roots: 100 - eq nodes: 1844 - tot: 2954
+ROOT stats - zero: 1105 - one: 25774 - lit: 98 - clause: 0
+ITP proof core: (root: 100,0 + chain: 2854 (res: 16813) - ref2: 2089) / tot:2954
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 100,0 + chain: 2854 (res: 16813) - ref2: 2089) / tot:2954
+ITP proof remapped roots: 128 - eq nodes: 552 - tot: 2407
+ROOT stats - zero: 0 - one: 0 - lit: 98 - clause: 0
+ITP proof core: (root: 125,0 + chain: 2279 (res: 15457) - ref2: 1702) / tot:2407
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 125,0 + chain: 2279 (res: 15457) - ref2: 1702) / tot:2407
+ITP proof remapped roots: 138 - eq nodes: 0 - tot: 2407
+ROOT stats - zero: 0 - one: 0 - lit: 95 - clause: 28
+ITP proof core: (root: 133,0 + chain: 2269 (res: 15437) - ref2: 1699) / tot:2407
+ITP proof dupv: 0 - implNodesOdc: 4299
+ITP proof core: (root: 133,0 + chain: 2269 (res: 11138) - ref2: 1699) / tot:2407
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:184]: 6085 -> 1884
+TOT NNF SIMPL: 1884 -> (abcBal: 1340) -> 1275 (1 iterations)
+RERUN PARTIAL ITP SIZE: 1275 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.40 s (norm 0.43 s))
+Solver RERUN1 stats: 87212/27114 vars/clauses
+RERUN1 proof has size size 6582
+Solver RERUN1 stats: 82536/5475953/5558 dec./prop./confl.
+
+CHECK Solver Validation time = 0.52 s (norm 0.56 s))
+RERUN Solver Replay time = 0.54 s (norm 0.58 s))
+RERUN Solver res: 24486 - resolvents: 5589
+# A cl: 478/16978
+ITP proof core: (root: 16934,46 + chain: 1921 (res: 528985) - ref2: 1410) / tot:19341
+ITP proof remapped roots: 56 - eq nodes: 864 - tot: 1113
+ROOT stats - zero: 419 - one: 16459 - lit: 54 - clause: 0
+ITP proof core: (root: 56,0 + chain: 1057 (res: 3673) - ref2: 840) / tot:1113
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 56,0 + chain: 1057 (res: 3673) - ref2: 840) / tot:1113
+ITP proof remapped roots: 68 - eq nodes: 201 - tot: 889
+ROOT stats - zero: 0 - one: 0 - lit: 54 - clause: 0
+ITP proof core: (root: 55,0 + chain: 821 (res: 3185) - ref2: 678) / tot:889
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 55,0 + chain: 821 (res: 3185) - ref2: 678) / tot:889
+ITP proof remapped roots: 60 - eq nodes: 0 - tot: 875
+ROOT stats - zero: 0 - one: 0 - lit: 42 - clause: 11
+ITP proof core: (root: 57,0 + chain: 815 (res: 3176) - ref2: 674) / tot:875
+ITP proof dupv: 0 - implNodesOdc: 950
+ITP proof core: (root: 57,0 + chain: 815 (res: 2226) - ref2: 674) / tot:875
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:59]: 828 -> 331
+TOT NNF SIMPL: 331 -> (abcBal: 251) -> 236 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 236
+
+NNF PBA Solver time = 0.19 s (norm 0.20 s))
+NNF PBA Solver stats: 45397/2318506/3004 dec./prop./confl.
+NNF PBA Solver Validation time = 0.23 s (norm 0.25 s))
+# AIG core -> gates: 121 / 246 (maxCut: 0)
+NNF PBA size: 236 -> 113
+# A cl: 1208/27142
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 226045
+itp stats: clause terms/a/o/ao -> 3084/0/0/3084 - A nodes: 0 (and->or): 32766
+itp opt: 113 -> 113
+12/14 (r:2) INDUCTIVE components found in TO+ (size: 105)
+|to simplify: 113->105|.
+TO: 105 (supp: 36) - AIG nodes 226034
+TO*TO+: 105 (supp: 36)
+|to:105|.
+|to&oldTo:3567|.
+   |tr|=16212 |reached|=5448.
+*** Trav time: 31.84 s (norm 33.84 s) ***
+ring 12 - safe for bound 9
+  Reusing SAME CONE ring
+fp chkTime: 0.05 s (norm 0.05 s)
+  Aig interpolant inner iteration 12: |from:13286| -> previous ring 13 - safe for bound 2
+FOUND 15(13 const) EQUIVALENCES - size 13156 -> 13102
+min/avg/max red id: 896/1348/1886
+FOUND 5 const REDUNDANCIES
+red size: 101 - F size 2009 -> 2009
+ring cone (e) - generated part[12/22] of size: 84109 - bound: 9
+DYN ABSTR (M22) KEPT 284/855 vars (time: 2.29 s (norm 2.44 s))
+computing interpolant in TO+
+ITP (|A|=9170,|B|=84512)
+ITP time limit: 10000
+Solver stats: 93398/158506 vars/clauses (elim v/cl:0/0)
+Solver stats: 60431/30257128/23300 dec./prop./confl.
+Solver stats: time = 2.15 s (norm 2.29 s)
+Solver Validation time = 2.81 s (norm 2.99 s) - prop:81694965
+Solver Replay time = 1.78 s (norm 1.90 s) - prop: 102951091
+computing interpolant from refutation proof of size 28844 (AIG nodes: 229597)
+RES PROOF REMOVED 33606 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 61129 resolutions
+RESTRUCT PROOF REMOVED 10027 redundant resolutions
+RES PROOF PROCESSED: 3489 A, 18656 B, 363 resA, 9566 resB, 8887 res (tot: 40961)
+RES PROOF has 30817 core and 10144 out of core nodes
+RES PROOF compacted from 40961 to 30808 nodes
+RES PROOF SWAPPED 5498 resolution vars
+resB: 0
+GET PROOF 3062 A (0 resA) - 18868 B (0 resB) - 8878 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 8878 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 3062 A (0 resA) - 18868 B (0 resB) - 8878 res - 0 red
+# A cl: 3062/21930
+ITP proof core: (root: 21861,71 + chain: 8555 (res: 1326517) - ref2: 6065) / tot:30810
+ITP proof remapped roots: 344 - eq nodes: 2478 - tot: 6421
+ROOT stats - zero: 2712 - one: 18805 - lit: 342 - clause: 0
+ITP proof core: (root: 344,0 + chain: 6077 (res: 35535) - ref2: 4325) / tot:6421
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 344,0 + chain: 6077 (res: 35535) - ref2: 4325) / tot:6421
+ITP proof remapped roots: 671 - eq nodes: 184 - tot: 6391
+ROOT stats - zero: 0 - one: 0 - lit: 342 - clause: 0
+ITP proof core: (root: 669,0 + chain: 5720 (res: 34232) - ref2: 4119) / tot:6391
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 669,0 + chain: 5720 (res: 34232) - ref2: 4119) / tot:6391
+ITP proof remapped roots: 780 - eq nodes: 0 - tot: 6446
+ROOT stats - zero: 0 - one: 0 - lit: 340 - clause: 327
+ITP proof core: (root: 759,0 + chain: 5666 (res: 33931) - ref2: 4094) / tot:6446
+ITP proof dupv: 0 - implNodesOdc: 1203
+ITP proof core: (root: 759,0 + chain: 5666 (res: 32728) - ref2: 4094) / tot:6446
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:270]: 29562 -> 23349
+TOT NNF SIMPL: 23349 -> (abcBal: 16858) -> 16337 (1 iterations)
+RERUN PARTIAL ITP SIZE: 16337 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.50 s (norm 0.54 s))
+Solver RERUN1 stats: 93398/21928 vars/clauses
+RERUN1 proof has size size 15606
+Solver RERUN1 stats: 52164/6008547/8358 dec./prop./confl.
+
+CHECK Solver Validation time = 0.61 s (norm 0.65 s))
+RERUN Solver Replay time = 0.68 s (norm 0.72 s))
+RERUN Solver res: 26895 - resolvents: 9888
+# A cl: 2611/16717
+ITP proof core: (root: 16635,84 + chain: 5182 (res: 642598) - ref2: 3637) / tot:23494
+ITP proof remapped roots: 309 - eq nodes: 1393 - tot: 4098
+ROOT stats - zero: 2303 - one: 14023 - lit: 307 - clause: 0
+ITP proof core: (root: 309,0 + chain: 3789 (res: 31118) - ref2: 2727) / tot:4098
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 309,0 + chain: 3789 (res: 31118) - ref2: 2727) / tot:4098
+ITP proof remapped roots: 586 - eq nodes: 113 - tot: 4139
+ROOT stats - zero: 0 - one: 0 - lit: 307 - clause: 0
+ITP proof core: (root: 585,0 + chain: 3553 (res: 29907) - ref2: 2582) / tot:4139
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 585,0 + chain: 3553 (res: 29907) - ref2: 2582) / tot:4139
+ITP proof remapped roots: 608 - eq nodes: 0 - tot: 4148
+ROOT stats - zero: 0 - one: 0 - lit: 306 - clause: 277
+ITP proof core: (root: 604,0 + chain: 3540 (res: 29838) - ref2: 2575) / tot:4148
+ITP proof dupv: 0 - implNodesOdc: 7147
+ITP proof core: (root: 604,0 + chain: 3540 (res: 22691) - ref2: 2576) / tot:4148
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:249]: 19351 -> 16336
+TOT NNF SIMPL: 16336 -> (abcBal: 11147) -> 10962 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 10962
+
+NNF PBA Solver time = 0.53 s (norm 0.57 s))
+NNF PBA Solver stats: 68994/8306046/6976 dec./prop./confl.
+NNF PBA Solver Validation time = 0.77 s (norm 0.82 s))
+# AIG core -> gates: 6001 / 11023 (maxCut: 0)
+NNF PBA size: 10962 -> 5942
+# A cl: 3062/21930
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 235388
+itp stats: clause terms/a/o/ao -> 9206/0/0/9206 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:145]: 5942 -> 5939
+TOT NNF SIMPL: 5939 -> (abcBal: 5792) -> 5752 (1 iterations)
+ABC / nnf simp: 4431/5752
+itp opt: 5752 -> 5752
+88/134 (r:46) INDUCTIVE components found in TO+ (size: 5502)
+|to simplify: 5752->5502|.
+TO: 5502 (supp: 267) - AIG nodes 234949
+TO*TO+: 5554 (supp: 284)
+|to:4352|.
+|to&oldTo:5089|.
+   |tr|=16212 |reached|=10081.
+*** Trav time: 48.05 s (norm 51.07 s) ***
+ring 13 - safe for bound 9
+  Reusing SAME CONE ring
+fp chkTime: 0.08 s (norm 0.09 s)
+  Aig interpolant inner iteration 13: |from:20200| -> ternary to+: 17
+TO+IMG-cube: 9 (f:20200->20182)
+min/avg/max red id: 485/804/1680
+FOUND 7 const REDUNDANCIES
+red size: 31 - F size 4878 -> 4878
+ring cone (e) - generated part[13/23] of size: 84512 - bound: 9
+DYN ABSTR (M22) KEPT 278/924 vars (time: 2.18 s (norm 2.32 s))
+computing interpolant in TO+
+ITP (|A|=12087,|B|=84447)
+ITP time limit: 10000
+Solver stats: 96256/165758 vars/clauses (elim v/cl:0/0)
+Solver stats: 79744/48558199/37020 dec./prop./confl.
+Solver stats: time = 3.77 s (norm 4.00 s)
+Solver Validation time = 4.60 s (norm 4.89 s) - prop:129522016
+Solver Replay time = 3.22 s (norm 3.42 s) - prop: 165887606
+computing interpolant from refutation proof of size 56568 (AIG nodes: 312488)
+RES PROOF REMOVED 74562 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 89664 resolutions
+RESTRUCT PROOF REMOVED 22091 redundant resolutions
+RES PROOF PROCESSED: 5724 A, 20234 B, 340 resA, 14472 resB, 16532 res (tot: 57302)
+RES PROOF has 43738 core and 13564 out of core nodes
+RES PROOF compacted from 57302 to 43711 nodes
+RES PROOF SWAPPED 10262 resolution vars
+resB: 0
+GET PROOF 5611 A (0 resA) - 21595 B (0 resB) - 16505 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 16505 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 5611 A (0 resA) - 21595 B (0 resB) - 16505 res - 0 red
+# A cl: 5611/27206
+ITP proof core: (root: 26728,480 + chain: 14088 (res: 2084530) - ref2: 9672) / tot:43713
+ITP proof remapped roots: 324 - eq nodes: 3597 - tot: 10815
+ROOT stats - zero: 5226 - one: 21178 - lit: 322 - clause: 0
+ITP proof core: (root: 324,0 + chain: 10491 (res: 66637) - ref2: 7323) / tot:10815
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 324,0 + chain: 10491 (res: 66637) - ref2: 7323) / tot:10815
+ITP proof remapped roots: 1164 - eq nodes: 263 - tot: 10971
+ROOT stats - zero: 0 - one: 0 - lit: 322 - clause: 0
+ITP proof core: (root: 1159,0 + chain: 9807 (res: 62984) - ref2: 6953) / tot:10971
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1159,0 + chain: 9807 (res: 62984) - ref2: 6953) / tot:10971
+ITP proof remapped roots: 1359 - eq nodes: 1 - tot: 11059
+ROOT stats - zero: 0 - one: 0 - lit: 321 - clause: 836
+ITP proof core: (root: 1333,0 + chain: 9700 (res: 62276) - ref2: 6886) / tot:11059
+ITP proof dupv: 0 - implNodesOdc: 1162
+ITP proof core: (root: 1333,0 + chain: 9700 (res: 61114) - ref2: 6886) / tot:11059
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:343]: 56239 -> 51637
+TOT NNF SIMPL: 51637 -> (abcBal: 36369) -> 35455 (1 iterations)
+RERUN PARTIAL ITP SIZE: 35455 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.80 s (norm 0.85 s))
+Solver RERUN1 stats: 96256/27203 vars/clauses
+RERUN1 proof has size size 19876
+Solver RERUN1 stats: 33626/9455274/11418 dec./prop./confl.
+
+CHECK Solver Validation time = 1.02 s (norm 1.08 s))
+RERUN Solver Replay time = 1.05 s (norm 1.12 s))
+RERUN Solver res: 31343 - resolvents: 11716
+# A cl: 4555/19746
+ITP proof core: (root: 19658,90 + chain: 7507 (res: 918234) - ref2: 5394) / tot:27902
+ITP proof remapped roots: 295 - eq nodes: 1723 - tot: 6079
+ROOT stats - zero: 4217 - one: 15146 - lit: 293 - clause: 0
+ITP proof core: (root: 295,0 + chain: 5784 (res: 41873) - ref2: 4241) / tot:6079
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 295,0 + chain: 5784 (res: 41873) - ref2: 4241) / tot:6079
+ITP proof remapped roots: 883 - eq nodes: 115 - tot: 6235
+ROOT stats - zero: 0 - one: 0 - lit: 293 - clause: 0
+ITP proof core: (root: 883,0 + chain: 5352 (res: 39589) - ref2: 4041) / tot:6235
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 883,0 + chain: 5352 (res: 39589) - ref2: 4041) / tot:6235
+ITP proof remapped roots: 995 - eq nodes: 3 - tot: 6275
+ROOT stats - zero: 0 - one: 0 - lit: 293 - clause: 588
+ITP proof core: (root: 988,0 + chain: 5280 (res: 39221) - ref2: 4001) / tot:6275
+ITP proof dupv: 0 - implNodesOdc: 1179
+ITP proof core: (root: 988,0 + chain: 5280 (res: 38042) - ref2: 4001) / tot:6275
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:281]: 35006 -> 32931
+TOT NNF SIMPL: 32931 -> (abcBal: 22028) -> 21574 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 21574
+
+NNF PBA Solver time = 1.03 s (norm 1.10 s))
+NNF PBA Solver stats: 18279/16093906/10121 dec./prop./confl.
+NNF PBA Solver Validation time = 1.45 s (norm 1.54 s))
+# AIG core -> gates: 13307 / 21630 (maxCut: 0)
+NNF PBA size: 21574 -> 13248
+# A cl: 5611/27206
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 325077
+itp stats: clause terms/a/o/ao -> 14980/0/0/14980 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:181]: 13248 -> 13243
+TOT NNF SIMPL: 13243 -> (abcBal: 12914) -> 12852 (1 iterations)
+ABC / nnf simp: 9794/12852
+itp opt: 12852 -> 12852
+110/171 (r:61) INDUCTIVE components found in TO+ (size: 12404)
+|to simplify: 12852->12404|.
+TO: 12404 (supp: 260) - AIG nodes 324258
+TO*TO+: 12441 (supp: 272)
+|to:9302|.
+   |tr|=16212 |reached|=16575.
+*** Trav time: 75.26 s (norm 80.00 s) ***
+ring 14 - safe for bound 9
+  Reusing SAME CONE ring
+fp chkTime: 0.13 s (norm 0.14 s)
+  Aig interpolant inner iteration 14: |from:25193| -> ternary to+: 11
+TO+IMG-cube: 6 (f:25193->25181)
+min/avg/max red id: 325/3628/7952
+FOUND 17 const REDUNDANCIES
+red size: 163 - F size 9242 -> 9242
+taking cone[14/24] of size: 84512 - bound: 9
+DYN ABSTR (M22) KEPT 266/927 vars (time: 3.92 s (norm 4.17 s))
+computing interpolant in TO+
+ITP (|A|=16204,|B|=84637)
+ITP time limit: 10000
+Solver stats: 100575/174895 vars/clauses (elim v/cl:0/0)
+Solver stats: 85535/48827935/36230 dec./prop./confl.
+Solver stats: time = 3.73 s (norm 3.96 s)
+Solver Validation time = 4.98 s (norm 5.29 s) - prop:138065705
+Solver Replay time = 3.21 s (norm 3.41 s) - prop: 175549362
+computing interpolant from refutation proof of size 49918 (AIG nodes: 334112)
+RES PROOF REMOVED 45543 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 102532 resolutions
+RESTRUCT PROOF REMOVED 13793 redundant resolutions
+RES PROOF PROCESSED: 9428 A, 17407 B, 430 resA, 13833 resB, 15836 res (tot: 56934)
+RES PROOF has 42891 core and 14043 out of core nodes
+RES PROOF compacted from 56934 to 42872 nodes
+RES PROOF SWAPPED 14787 resolution vars
+resB: 0
+GET PROOF 9507 A (0 resA) - 17548 B (0 resB) - 15817 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 15817 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 9507 A (0 resA) - 17548 B (0 resB) - 15817 res - 0 red
+# A cl: 9507/27055
+ITP proof core: (root: 26790,267 + chain: 15545 (res: 2087751) - ref2: 10861) / tot:42874
+ITP proof remapped roots: 346 - eq nodes: 3043 - tot: 12848
+ROOT stats - zero: 9098 - one: 17346 - lit: 344 - clause: 0
+ITP proof core: (root: 346,0 + chain: 12502 (res: 90368) - ref2: 8886) / tot:12848
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 346,0 + chain: 12502 (res: 90368) - ref2: 8886) / tot:12848
+ITP proof remapped roots: 1273 - eq nodes: 300 - tot: 12966
+ROOT stats - zero: 0 - one: 0 - lit: 344 - clause: 0
+ITP proof core: (root: 1271,0 + chain: 11693 (res: 86005) - ref2: 8544) / tot:12966
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1271,0 + chain: 11693 (res: 86005) - ref2: 8544) / tot:12966
+ITP proof remapped roots: 1581 - eq nodes: 0 - tot: 13086
+ROOT stats - zero: 0 - one: 0 - lit: 343 - clause: 926
+ITP proof core: (root: 1536,0 + chain: 11505 (res: 84856) - ref2: 8443) / tot:13086
+ITP proof dupv: 0 - implNodesOdc: 1893
+ITP proof core: (root: 1536,0 + chain: 11505 (res: 82962) - ref2: 8445) / tot:13086
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:246]: 74577 -> 70599
+TOT NNF SIMPL: 70599 -> (abcBal: 45093) -> 44350 (1 iterations)
+RERUN PARTIAL ITP SIZE: 44350 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 1.06 s (norm 1.13 s))
+Solver RERUN1 stats: 100575/27051 vars/clauses
+RERUN1 proof has size size 22499
+Solver RERUN1 stats: 79873/12320996/15815 dec./prop./confl.
+
+CHECK Solver Validation time = 1.35 s (norm 1.43 s))
+RERUN Solver Replay time = 1.49 s (norm 1.58 s))
+RERUN Solver res: 35557 - resolvents: 14933
+# A cl: 7629/20147
+ITP proof core: (root: 19962,187 + chain: 10123 (res: 1286606) - ref2: 7577) / tot:30613
+ITP proof remapped roots: 292 - eq nodes: 1426 - tot: 8989
+ROOT stats - zero: 7281 - one: 12389 - lit: 290 - clause: 0
+ITP proof core: (root: 292,0 + chain: 8697 (res: 67457) - ref2: 6597) / tot:8989
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 292,0 + chain: 8697 (res: 67457) - ref2: 6597) / tot:8989
+ITP proof remapped roots: 1128 - eq nodes: 141 - tot: 9240
+ROOT stats - zero: 0 - one: 0 - lit: 290 - clause: 0
+ITP proof core: (root: 1124,0 + chain: 8112 (res: 64186) - ref2: 6275) / tot:9240
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1124,0 + chain: 8112 (res: 64186) - ref2: 6275) / tot:9240
+ITP proof remapped roots: 1342 - eq nodes: 0 - tot: 9329
+ROOT stats - zero: 0 - one: 0 - lit: 286 - clause: 836
+ITP proof core: (root: 1313,0 + chain: 7987 (res: 63492) - ref2: 6195) / tot:9329
+ITP proof dupv: 0 - implNodesOdc: 2177
+ITP proof core: (root: 1313,0 + chain: 7987 (res: 61315) - ref2: 6196) / tot:9329
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:103]: 53268 -> 51407
+TOT NNF SIMPL: 51407 -> (abcBal: 31059) -> 30649 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 30649
+
+NNF PBA Solver time = 1.35 s (norm 1.44 s))
+NNF PBA Solver stats: 101488/21713997/11801 dec./prop./confl.
+NNF PBA Solver Validation time = 1.69 s (norm 1.80 s))
+# AIG core -> gates: 18309 / 30739 (maxCut: 0)
+NNF PBA size: 30649 -> 18211
+# A cl: 9507/27055
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 351324
+itp stats: clause terms/a/o/ao -> 19492/0/0/19492 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:97]: 18211 -> 18202
+TOT NNF SIMPL: 18202 -> (abcBal: 17704) -> 17628 (1 iterations)
+ABC / nnf simp: 12661/17628
+itp opt: 17628 -> 17628
+73/95 (r:22) INDUCTIVE components found in TO+ (size: 17360)
+|to simplify: 17628->17360|.
+TO: 17360 (supp: 256) - AIG nodes 350479
+TO*TO+: 17464 (supp: 265)
+|to:17464|.
+   |tr|=16212 |reached|=32788.
+*** Trav time: 106.20 s (norm 112.89 s) ***
+ring 15 - safe for bound 9
+  Reusing SAME CONE ring
+fp chkTime: 0.24 s (norm 0.26 s)
+  Aig interpolant inner iteration 15: |from:33370| -> ternary to+: 11
+TO+IMG-cube: 6 (f:33370->33358)
+min/avg/max red id: 285/6295/15180
+FOUND 25 const REDUNDANCIES
+red size: 383 - F size 17368 -> 17368
+taking cone[15/25] of size: 84512 - bound: 9
+Inner loop REACHES back cone.
+
+try ITP ref. # 5/16 - cone/constr 0 of size: 3 - ring: 25 (rl: 0)
+ITP ref. chk[15] - cone sz: 105608 - fwd ring: 17464
+ITP ref. chk[14] - cone sz: 116189 - fwd ring: 9302
+refinement possible at level 14
+
+Interpolant FINITE RUN: cone=3, care=0.
+fp chkTime: 0.14 s (norm 0.15 s)
+  Aig interpolant inner iteration 14: |from:25193| -> previous ring 15 - safe for bound 9
+min/avg/max red id: 620/3789/7952
+FOUND 17 const REDUNDANCIES
+red size: 163 - F size 9242 -> 9242
+ring cone (e) - generated part[14/26] of size: 105608 - bound: 11
+DYN ABSTR (M22) KEPT 226/927 vars (time: 11.02 s (norm 11.72 s))
+computing interpolant in TO+
+ITP (|A|=15711,|B|=122914)
+ITP time limit: 10000
+Solver stats: 138399/243946 vars/clauses (elim v/cl:0/0)
+Solver stats: 113948/86913399/47473 dec./prop./confl.
+Solver stats: time = 7.14 s (norm 7.59 s)
+Solver Validation time = 9.12 s (norm 9.70 s) - prop:236070343
+Solver Replay time = 5.36 s (norm 5.70 s) - prop: 293968865
+computing interpolant from refutation proof of size 47794 (AIG nodes: 329602)
+RES PROOF REMOVED 76649 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 104184 resolutions
+RESTRUCT PROOF REMOVED 24552 redundant resolutions
+RES PROOF PROCESSED: 1440 A, 35688 B, 26 resA, 28188 resB, 11001 res (tot: 76343)
+RES PROOF has 45514 core and 30829 out of core nodes
+RES PROOF compacted from 76343 to 45489 nodes
+RES PROOF SWAPPED 26 resolution vars
+resB: 0
+GET PROOF 1316 A (0 resA) - 33197 B (0 resB) - 10976 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 10976 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 1316 A (0 resA) - 33197 B (0 resB) - 10976 res - 0 red
+# A cl: 1316/34513
+ITP proof core: (root: 34136,379 + chain: 10305 (res: 1043289) - ref2: 7506) / tot:45491
+ITP proof remapped roots: 163 - eq nodes: 4908 - tot: 5560
+ROOT stats - zero: 1092 - one: 32881 - lit: 161 - clause: 0
+ITP proof core: (root: 163,0 + chain: 5397 (res: 14716) - ref2: 4058) / tot:5560
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 163,0 + chain: 5397 (res: 14716) - ref2: 4058) / tot:5560
+ITP proof remapped roots: 210 - eq nodes: 2996 - tot: 2581
+ROOT stats - zero: 0 - one: 0 - lit: 161 - clause: 0
+ITP proof core: (root: 183,0 + chain: 2371 (res: 7709) - ref2: 1848) / tot:2581
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 183,0 + chain: 2371 (res: 7709) - ref2: 1848) / tot:2581
+ITP proof remapped roots: 216 - eq nodes: 4 - tot: 2551
+ROOT stats - zero: 0 - one: 0 - lit: 138 - clause: 43
+ITP proof core: (root: 188,0 + chain: 2335 (res: 7636) - ref2: 1826) / tot:2551
+ITP proof dupv: 0 - implNodesOdc: 2889
+ITP proof core: (root: 188,0 + chain: 2335 (res: 4747) - ref2: 1826) / tot:2551
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:48]: 2517 -> 1072
+TOT NNF SIMPL: 1072 -> (abcBal: 893) -> 865 (1 iterations)
+RERUN PARTIAL ITP SIZE: 865 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.92 s (norm 0.98 s))
+Solver RERUN1 stats: 138399/34513 vars/clauses
+RERUN1 proof has size size 17762
+Solver RERUN1 stats: 111953/9420649/12729 dec./prop./confl.
+
+CHECK Solver Validation time = 1.13 s (norm 1.20 s))
+RERUN Solver Replay time = 1.20 s (norm 1.28 s))
+RERUN Solver res: 37760 - resolvents: 11741
+# A cl: 725/19973
+ITP proof core: (root: 19901,74 + chain: 4300 (res: 387617) - ref2: 3232) / tot:24587
+ITP proof remapped roots: 87 - eq nodes: 1790 - tot: 2597
+ROOT stats - zero: 589 - one: 19225 - lit: 85 - clause: 0
+ITP proof core: (root: 87,0 + chain: 2510 (res: 10353) - ref2: 1983) / tot:2597
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 87,0 + chain: 2510 (res: 10353) - ref2: 1983) / tot:2597
+ITP proof remapped roots: 119 - eq nodes: 1790 - tot: 824
+ROOT stats - zero: 0 - one: 0 - lit: 85 - clause: 0
+ITP proof core: (root: 91,0 + chain: 705 (res: 3281) - ref2: 569) / tot:824
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 91,0 + chain: 705 (res: 3281) - ref2: 569) / tot:824
+ITP proof remapped roots: 104 - eq nodes: 0 - tot: 797
+ROOT stats - zero: 0 - one: 0 - lit: 57 - clause: 32
+ITP proof core: (root: 94,0 + chain: 693 (res: 3259) - ref2: 560) / tot:797
+ITP proof dupv: 0 - implNodesOdc: 1865
+ITP proof core: (root: 94,0 + chain: 693 (res: 1394) - ref2: 562) / tot:797
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:38]: 828 -> 415
+TOT NNF SIMPL: 415 -> (abcBal: 352) -> 343 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 343
+
+NNF PBA Solver time = 0.26 s (norm 0.27 s))
+NNF PBA Solver stats: 136251/2737486/5005 dec./prop./confl.
+NNF PBA Solver Validation time = 0.34 s (norm 0.37 s))
+# AIG core -> gates: 253 / 356 (maxCut: 0)
+NNF PBA size: 343 -> 241
+# A cl: 1316/34513
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 329733
+itp stats: clause terms/a/o/ao -> 3028/0/0/3028 - A nodes: 0 (and->or): 32766
+itp opt: 241 -> 241
+9/11 (r:2) INDUCTIVE components found in TO+ (size: 237)
+|to simplify: 241->237|.
+TO: 237 (supp: 67) - AIG nodes 329727
+TO*TO+: 378 (supp: 93)
+|to:378|.
+|to&oldTo:17635|.
+   |tr|=16212 |reached|=44374.
+*** Trav time: 176.77 s (norm 187.91 s) ***
+ring 15 - safe for bound 11
+  Reusing SAME CONE ring
+fp chkTime: 0.24 s (norm 0.26 s)
+  Aig interpolant inner iteration 15: |from:33540| -> ternary to+: 11
+TO+IMG-cube: 6 (f:33540->33528)
+min/avg/max red id: 286/6767/15332
+FOUND 35 const REDUNDANCIES
+red size: 416 - F size 17520 -> 17520
+ring cone (e) - generated part[15/27] of size: 105700 - bound: 11
+DYN ABSTR (M22) KEPT 265/927 vars (time: 10.79 s (norm 11.47 s))
+computing interpolant in TO+
+ITP (|A|=24436,|B|=106110)
+ITP time limit: 10000
+Solver stats: 130281/227276 vars/clauses (elim v/cl:0/0)
+Solver stats: 148901/80255653/46277 dec./prop./confl.
+Solver stats: time = 6.30 s (norm 6.70 s)
+Solver Validation time = 8.52 s (norm 9.05 s) - prop:227739041
+Solver Replay time = 4.89 s (norm 5.20 s) - prop: 281455669
+computing interpolant from refutation proof of size 71608 (AIG nodes: 413358)
+RES PROOF REMOVED 56564 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 126030 resolutions
+RESTRUCT PROOF REMOVED 16387 redundant resolutions
+RES PROOF PROCESSED: 14028 A, 22127 B, 465 resA, 14544 resB, 24878 res (tot: 76042)
+RES PROOF has 61095 core and 14947 out of core nodes
+RES PROOF compacted from 76042 to 61067 nodes
+RES PROOF SWAPPED 16364 resolution vars
+resB: 0
+GET PROOF 13817 A (0 resA) - 22400 B (0 resB) - 24850 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 24850 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 13817 A (0 resA) - 22400 B (0 resB) - 24850 res - 0 red
+# A cl: 13817/36217
+ITP proof core: (root: 35782,437 + chain: 23856 (res: 2370529) - ref2: 17029) / tot:61069
+ITP proof remapped roots: 352 - eq nodes: 4349 - tot: 19859
+ROOT stats - zero: 13447 - one: 21983 - lit: 350 - clause: 0
+ITP proof core: (root: 352,0 + chain: 19507 (res: 144546) - ref2: 14168) / tot:19859
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 352,0 + chain: 19507 (res: 144546) - ref2: 14168) / tot:19859
+ITP proof remapped roots: 1316 - eq nodes: 495 - tot: 19961
+ROOT stats - zero: 0 - one: 0 - lit: 350 - clause: 0
+ITP proof core: (root: 1313,0 + chain: 18645 (res: 138877) - ref2: 13695) / tot:19961
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1313,0 + chain: 18645 (res: 138877) - ref2: 13695) / tot:19961
+ITP proof remapped roots: 1670 - eq nodes: 8 - tot: 20078
+ROOT stats - zero: 0 - one: 0 - lit: 347 - clause: 964
+ITP proof core: (root: 1614,0 + chain: 18408 (res: 137360) - ref2: 13538) / tot:20078
+ITP proof dupv: 0 - implNodesOdc: 13362
+ITP proof core: (root: 1614,0 + chain: 18408 (res: 123998) - ref2: 13538) / tot:20078
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:372]: 103421 -> 92989
+TOT NNF SIMPL: 92989 -> (abcBal: 59261) -> 58199 (1 iterations)
+RERUN PARTIAL ITP SIZE: 58199 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 1.75 s (norm 1.86 s))
+Solver RERUN1 stats: 130281/36217 vars/clauses
+RERUN1 proof has size size 46557
+Solver RERUN1 stats: 219350/19493065/25644 dec./prop./confl.
+
+CHECK Solver Validation time = 2.27 s (norm 2.41 s))
+RERUN Solver Replay time = 2.32 s (norm 2.47 s))
+RERUN Solver res: 51363 - resolvents: 23636
+# A cl: 10566/28421
+ITP proof core: (root: 28375,48 + chain: 16565 (res: 1608212) - ref2: 12153) / tot:45263
+ITP proof remapped roots: 285 - eq nodes: 3107 - tot: 13743
+ROOT stats - zero: 10282 - one: 17808 - lit: 283 - clause: 0
+ITP proof core: (root: 285,0 + chain: 13458 (res: 100459) - ref2: 10206) / tot:13743
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 285,0 + chain: 13458 (res: 100459) - ref2: 10206) / tot:13743
+ITP proof remapped roots: 1062 - eq nodes: 614 - tot: 13585
+ROOT stats - zero: 0 - one: 0 - lit: 283 - clause: 0
+ITP proof core: (root: 1061,0 + chain: 12523 (res: 95319) - ref2: 9662) / tot:13585
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1061,0 + chain: 12523 (res: 95319) - ref2: 9662) / tot:13585
+ITP proof remapped roots: 1341 - eq nodes: 2 - tot: 13734
+ROOT stats - zero: 0 - one: 0 - lit: 282 - clause: 777
+ITP proof core: (root: 1286,0 + chain: 12393 (res: 94195) - ref2: 9595) / tot:13734
+ITP proof dupv: 0 - implNodesOdc: 2282
+ITP proof core: (root: 1286,0 + chain: 12393 (res: 91913) - ref2: 9595) / tot:13734
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:379]: 78792 -> 74829
+TOT NNF SIMPL: 74829 -> (abcBal: 42707) -> 42087 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 42087
+
+NNF PBA Solver time = 2.54 s (norm 2.70 s))
+NNF PBA Solver stats: 142129/40523445/17718 dec./prop./confl.
+NNF PBA Solver Validation time = 3.46 s (norm 3.68 s))
+# AIG core -> gates: 24856 / 42186 (maxCut: 0)
+NNF PBA size: 42087 -> 24694
+# A cl: 13817/36217
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 436186
+itp stats: clause terms/a/o/ao -> 30801/0/0/30801 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:265]: 24694 -> 24691
+TOT NNF SIMPL: 24691 -> (abcBal: 23912) -> 23768 (1 iterations)
+ABC / nnf simp: 17190/23768
+itp opt: 17185 -> 17185
+TO: 17185 (supp: 255) - AIG nodes 429588
+TO*TO+: 17405 (supp: 266)
+|to:16857|.
+   |tr|=16212 |reached|=60296.
+*** Trav time: 234.15 s (norm 248.91 s) ***
+ring 16 - safe for bound 11
+  Reusing SAME CONE ring
+fp chkTime: 0.30 s (norm 0.32 s)
+  Aig interpolant inner iteration 16: |from:32759| -> ternary to+: 11
+TO+IMG-cube: 6 (f:32759->32747)
+min/avg/max red id: 264/6948/15918
+FOUND 23 const REDUNDANCIES
+red size: 1004 - F size 16831 -> 16831
+taking cone[16/28] of size: 105700 - bound: 11
+DYN ABSTR (M22) KEPT 263/927 vars (time: 12.48 s (norm 13.27 s))
+computing interpolant in TO+
+ITP (|A|=23732,|B|=106941)
+ITP time limit: 10000
+Solver stats: 130410/229359 vars/clauses (elim v/cl:0/0)
+Solver stats: 163163/92791114/54868 dec./prop./confl.
+Solver stats: time = 12.05 s (norm 12.81 s)
+Solver Validation time = 15.29 s (norm 16.25 s) - prop:254481488
+Solver Replay time = 8.63 s (norm 9.17 s) - prop: 321712371
+computing interpolant from refutation proof of size 93277 (AIG nodes: 445294)
+RES PROOF REMOVED 83445 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 128492 resolutions
+RESTRUCT PROOF REMOVED 22064 redundant resolutions
+RES PROOF PROCESSED: 15092 A, 22779 B, 842 resA, 13605 resB, 29245 res (tot: 81563)
+RES PROOF has 69130 core and 12433 out of core nodes
+RES PROOF compacted from 81563 to 69082 nodes
+RES PROOF SWAPPED 13141 resolution vars
+resB: 0
+GET PROOF 15213 A (0 resA) - 24672 B (0 resB) - 29197 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 29197 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 15213 A (0 resA) - 24672 B (0 resB) - 29197 res - 0 red
+# A cl: 15213/39885
+ITP proof core: (root: 39262,625 + chain: 27742 (res: 2655153) - ref2: 19445) / tot:69084
+ITP proof remapped roots: 360 - eq nodes: 6107 - tot: 21995
+ROOT stats - zero: 14734 - one: 24168 - lit: 358 - clause: 0
+ITP proof core: (root: 360,0 + chain: 21635 (res: 152756) - ref2: 15660) / tot:21995
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 360,0 + chain: 21635 (res: 152756) - ref2: 15660) / tot:21995
+ITP proof remapped roots: 1687 - eq nodes: 1362 - tot: 21409
+ROOT stats - zero: 0 - one: 0 - lit: 358 - clause: 0
+ITP proof core: (root: 1683,0 + chain: 19722 (res: 140973) - ref2: 14677) / tot:21409
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1683,0 + chain: 19722 (res: 140973) - ref2: 14677) / tot:21409
+ITP proof remapped roots: 2122 - eq nodes: 46 - tot: 21448
+ROOT stats - zero: 0 - one: 0 - lit: 354 - clause: 1327
+ITP proof core: (root: 2038,0 + chain: 19326 (res: 138689) - ref2: 14439) / tot:21448
+ITP proof dupv: 0 - implNodesOdc: 13068
+ITP proof core: (root: 2038,0 + chain: 19325 (res: 125618) - ref2: 14441) / tot:21448
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:292]: 109327 -> 97231
+TOT NNF SIMPL: 97231 -> (abcBal: 55855) -> 54488 (1 iterations)
+RERUN PARTIAL ITP SIZE: 54488 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 2.74 s (norm 2.91 s))
+Solver RERUN1 stats: 130410/39885 vars/clauses
+RERUN1 proof has size size 51796
+Solver RERUN1 stats: 139946/24049945/27975 dec./prop./confl.
+
+CHECK Solver Validation time = 3.61 s (norm 3.84 s))
+RERUN Solver Replay time = 3.39 s (norm 3.60 s))
+RERUN Solver res: 54515 - resolvents: 24806
+# A cl: 11775/31053
+ITP proof core: (root: 30920,135 + chain: 17019 (res: 1622273) - ref2: 12739) / tot:48561
+ITP proof remapped roots: 302 - eq nodes: 3408 - tot: 13913
+ROOT stats - zero: 11434 - one: 19184 - lit: 300 - clause: 0
+ITP proof core: (root: 302,0 + chain: 13611 (res: 101894) - ref2: 10461) / tot:13913
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 302,0 + chain: 13611 (res: 101894) - ref2: 10461) / tot:13913
+ITP proof remapped roots: 1672 - eq nodes: 311 - tot: 14349
+ROOT stats - zero: 0 - one: 0 - lit: 300 - clause: 0
+ITP proof core: (root: 1668,0 + chain: 12677 (res: 92296) - ref2: 9926) / tot:14349
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1668,0 + chain: 12677 (res: 92296) - ref2: 9926) / tot:14349
+ITP proof remapped roots: 2111 - eq nodes: 16 - tot: 14383
+ROOT stats - zero: 0 - one: 0 - lit: 297 - clause: 1369
+ITP proof core: (root: 2029,0 + chain: 12272 (res: 89407) - ref2: 9695) / tot:14383
+ITP proof dupv: 0 - implNodesOdc: 7216
+ITP proof core: (root: 2029,0 + chain: 12272 (res: 82191) - ref2: 9695) / tot:14383
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:254]: 73937 -> 67995
+TOT NNF SIMPL: 67995 -> (abcBal: 39176) -> 38428 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 38428
+
+NNF PBA Solver time = 3.42 s (norm 3.64 s))
+NNF PBA Solver stats: 182788/38199508/23421 dec./prop./confl.
+NNF PBA Solver Validation time = 4.86 s (norm 5.16 s))
+# AIG core -> gates: 22739 / 38540 (maxCut: 0)
+NNF PBA size: 38428 -> 22554
+# A cl: 15213/39885
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 465978
+itp stats: clause terms/a/o/ao -> 31597/0/0/31597 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:170]: 22554 -> 22546
+TOT NNF SIMPL: 22546 -> (abcBal: 21894) -> 21775 (1 iterations)
+ABC / nnf simp: 15502/21775
+itp opt: 15488 -> 15488
+39/80 (r:41) INDUCTIVE components found in TO+ (size: 15247)
+|to simplify: 15488->15247|.
+TO: 15247 (supp: 256) - AIG nodes 459473
+TO*TO+: 15795 (supp: 264)
+|to:15795|.
+   |tr|=16212 |reached|=74896.
+*** Trav time: 321.73 s (norm 342.00 s) ***
+ring 17 - safe for bound 11
+  Reusing SAME CONE ring
+fp chkTime: 0.76 s (norm 0.81 s)
+  Aig interpolant inner iteration 17: |from:31702| -> ternary to+: 11
+TO+IMG-cube: 6 (f:31702->31690)
+min/avg/max red id: 2665/11986/15611
+FOUND 65 const REDUNDANCIES
+red size: 3337 - F size 15744 -> 15744
+taking cone[17/29] of size: 105700 - bound: 11
+DYN ABSTR (M22) KEPT 261/927 vars (time: 11.48 s (norm 12.20 s))
+computing interpolant in TO+
+ITP (|A|=22636,|B|=110905)
+ITP time limit: 10000
+Solver stats: 133280/235055 vars/clauses (elim v/cl:0/0)
+Solver stats: 176498/155686665/79859 dec./prop./confl.
+Solver stats: time = 20.73 s (norm 22.04 s)
+Solver Validation time = 29.26 s (norm 31.10 s) - prop:456694711
+Solver Replay time = 17.70 s (norm 18.81 s) - prop: 582925032
+computing interpolant from refutation proof of size 79862 (AIG nodes: 460491)
+RES PROOF REMOVED 233856 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 216271 resolutions
+RESTRUCT PROOF REMOVED 36879 redundant resolutions
+RES PROOF PROCESSED: 12099 A, 29510 B, 693 resA, 24211 resB, 43560 res (tot: 110073)
+RES PROOF has 93551 core and 16522 out of core nodes
+RES PROOF compacted from 110073 to 93469 nodes
+RES PROOF SWAPPED 6819 resolution vars
+resB: 0
+GET PROOF 12189 A (0 resA) - 37802 B (0 resB) - 43478 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 43478 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 12189 A (0 resA) - 37802 B (0 resB) - 43478 res - 0 red
+# A cl: 12189/49991
+ITP proof core: (root: 49583,410 + chain: 41830 (res: 5111221) - ref2: 29548) / tot:93471
+ITP proof remapped roots: 395 - eq nodes: 11537 - tot: 30688
+ROOT stats - zero: 11722 - one: 37466 - lit: 392 - clause: 1
+ITP proof core: (root: 395,0 + chain: 30293 (res: 164521) - ref2: 22355) / tot:30688
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 395,0 + chain: 30293 (res: 164521) - ref2: 22355) / tot:30688
+ITP proof remapped roots: 1524 - eq nodes: 1480 - tot: 29806
+ROOT stats - zero: 0 - one: 0 - lit: 392 - clause: 1
+ITP proof core: (root: 1523,0 + chain: 28282 (res: 153235) - ref2: 21140) / tot:29806
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1523,0 + chain: 28282 (res: 153235) - ref2: 21140) / tot:29806
+ITP proof remapped roots: 1982 - eq nodes: 0 - tot: 29950
+ROOT stats - zero: 0 - one: 0 - lit: 392 - clause: 1129
+ITP proof core: (root: 1900,0 + chain: 27968 (res: 149764) - ref2: 20936) / tot:29950
+ITP proof dupv: 0 - implNodesOdc: 8432
+ITP proof core: (root: 1900,0 + chain: 27968 (res: 141332) - ref2: 20936) / tot:29950
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:718]: 116535 -> 89344
+TOT NNF SIMPL: 89344 -> (abcBal: 54815) -> 53207 (1 iterations)
+RERUN PARTIAL ITP SIZE: 53207 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 5.41 s (norm 5.75 s))
+Solver RERUN1 stats: 133280/49991 vars/clauses
+RERUN1 proof has size size 41133
+Solver RERUN1 stats: 200967/40217960/41131 dec./prop./confl.
+
+CHECK Solver Validation time = 7.94 s (norm 8.44 s))
+RERUN Solver Replay time = 9.29 s (norm 9.87 s))
+RERUN Solver res: 77097 - resolvents: 38983
+# A cl: 9615/41637
+ITP proof core: (root: 41519,120 + chain: 24281 (res: 3003777) - ref2: 18236) / tot:66544
+ITP proof remapped roots: 318 - eq nodes: 6985 - tot: 17614
+ROOT stats - zero: 9265 - one: 31936 - lit: 315 - clause: 1
+ITP proof core: (root: 318,0 + chain: 17296 (res: 101846) - ref2: 13405) / tot:17614
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 318,0 + chain: 17296 (res: 101846) - ref2: 13405) / tot:17614
+ITP proof remapped roots: 1625 - eq nodes: 1060 - tot: 17148
+ROOT stats - zero: 0 - one: 0 - lit: 315 - clause: 1
+ITP proof core: (root: 1624,0 + chain: 15523 (res: 88333) - ref2: 12233) / tot:17148
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1624,0 + chain: 15523 (res: 88333) - ref2: 12233) / tot:17148
+ITP proof remapped roots: 2216 - eq nodes: 43 - tot: 17049
+ROOT stats - zero: 0 - one: 0 - lit: 314 - clause: 1308
+ITP proof core: (root: 2022,0 + chain: 14833 (res: 83176) - ref2: 11757) / tot:17049
+ITP proof dupv: 0 - implNodesOdc: 5292
+ITP proof core: (root: 2022,0 + chain: 14833 (res: 77884) - ref2: 11757) / tot:17049
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:408]: 67740 -> 60782
+TOT NNF SIMPL: 60782 -> (abcBal: 37506) -> 36754 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 36754
+
+NNF PBA Solver time = 5.63 s (norm 5.99 s))
+NNF PBA Solver stats: 176981/47303462/26568 dec./prop./confl.
+NNF PBA Solver Validation time = 7.00 s (norm 7.44 s))
+# AIG core -> gates: 19098 / 36918 (maxCut: 0)
+NNF PBA size: 36754 -> 18956
+# A cl: 12189/49991
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 477909
+itp stats: clause terms/a/o/ao -> 42801/0/0/42801 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:233]: 18956 -> 18947
+TOT NNF SIMPL: 18947 -> (abcBal: 18133) -> 17970 (1 iterations)
+ABC / nnf simp: 12843/17970
+itp opt: 17970 -> 17970
+119/220 (r:101) INDUCTIVE components found in TO+ (size: 17129)
+|to simplify: 17970->17129|.
+TO: 17129 (supp: 251) - AIG nodes 476119
+TO*TO+: 19527 (supp: 262)
+|to:19527|.
+   |tr|=16212 |reached|=92571.
+*** Trav time: 458.13 s (norm 486.99 s) ***
+ring 18 - safe for bound 11
+  Reusing SAME CONE ring
+fp chkTime: 0.57 s (norm 0.61 s)
+  Aig interpolant inner iteration 18: |from:35430| -> ternary to+: 11
+TO+IMG-cube: 6 (f:35430->35418)
+min/avg/max red id: 612/13209/18966
+FOUND 44 const REDUNDANCIES
+red size: 5341 - F size 19370 -> 19370
+taking cone[18/30] of size: 105700 - bound: 11
+DYN ABSTR (M22) KEPT 264/927 vars (time: 12.19 s (norm 12.95 s))
+computing interpolant in TO+
+ITP (|A|=26280,|B|=113557)
+ITP time limit: 10000
+Solver stats: 139573/245558 vars/clauses (elim v/cl:0/0)
+Solver stats: 164829/123623685/65477 dec./prop./confl.
+Solver stats: time = 11.33 s (norm 12.05 s)
+Solver Validation time = 13.47 s (norm 14.32 s) - prop:319758414
+Solver Replay time = 7.63 s (norm 8.11 s) - prop: 394091017
+computing interpolant from refutation proof of size 83528 (AIG nodes: 482385)
+RES PROOF REMOVED 131525 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 158423 resolutions
+RESTRUCT PROOF REMOVED 78053 redundant resolutions
+RES PROOF PROCESSED: 11642 A, 28081 B, 923 resA, 20478 resB, 27089 res (tot: 88213)
+RES PROOF has 69326 core and 18887 out of core nodes
+RES PROOF compacted from 88213 to 69288 nodes
+RES PROOF SWAPPED 6312 resolution vars
+resB: 0
+GET PROOF 11824 A (0 resA) - 30413 B (0 resB) - 27051 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 27051 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 11824 A (0 resA) - 30413 B (0 resB) - 27051 res - 0 red
+# A cl: 11824/42237
+ITP proof core: (root: 41753,486 + chain: 26528 (res: 2555202) - ref2: 18552) / tot:69290
+ITP proof remapped roots: 399 - eq nodes: 6341 - tot: 20586
+ROOT stats - zero: 11374 - one: 29980 - lit: 396 - clause: 1
+ITP proof core: (root: 399,0 + chain: 20187 (res: 129029) - ref2: 14558) / tot:20586
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 399,0 + chain: 20187 (res: 129029) - ref2: 14558) / tot:20586
+ITP proof remapped roots: 1377 - eq nodes: 754 - tot: 20341
+ROOT stats - zero: 0 - one: 0 - lit: 396 - clause: 1
+ITP proof core: (root: 1372,0 + chain: 18964 (res: 121743) - ref2: 13842) / tot:20341
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1372,0 + chain: 18964 (res: 121743) - ref2: 13842) / tot:20341
+ITP proof remapped roots: 1697 - eq nodes: 8 - tot: 20399
+ROOT stats - zero: 0 - one: 0 - lit: 392 - clause: 978
+ITP proof core: (root: 1624,0 + chain: 18702 (res: 120279) - ref2: 13701) / tot:20399
+ITP proof dupv: 0 - implNodesOdc: 9493
+ITP proof core: (root: 1624,0 + chain: 18702 (res: 110786) - ref2: 13701) / tot:20399
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:382]: 95120 -> 86033
+TOT NNF SIMPL: 86033 -> (abcBal: 55216) -> 53697 (1 iterations)
+RERUN PARTIAL ITP SIZE: 53697 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 2.14 s (norm 2.28 s))
+Solver RERUN1 stats: 139573/42237 vars/clauses
+RERUN1 proof has size size 49959
+Solver RERUN1 stats: 135444/21710235/26627 dec./prop./confl.
+
+CHECK Solver Validation time = 2.85 s (norm 3.03 s))
+RERUN Solver Replay time = 2.95 s (norm 3.13 s))
+RERUN Solver res: 54826 - resolvents: 24423
+# A cl: 8370/31193
+ITP proof core: (root: 31106,89 + chain: 17653 (res: 1725710) - ref2: 12822) / tot:49112
+ITP proof remapped roots: 313 - eq nodes: 3917 - tot: 14049
+ROOT stats - zero: 8029 - one: 22764 - lit: 310 - clause: 1
+ITP proof core: (root: 313,0 + chain: 13736 (res: 102858) - ref2: 10301) / tot:14049
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 313,0 + chain: 13736 (res: 102858) - ref2: 10301) / tot:14049
+ITP proof remapped roots: 1333 - eq nodes: 1035 - tot: 13533
+ROOT stats - zero: 0 - one: 0 - lit: 310 - clause: 1
+ITP proof core: (root: 1325,0 + chain: 12200 (res: 92171) - ref2: 9358) / tot:13533
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 1325,0 + chain: 12200 (res: 92171) - ref2: 9358) / tot:13533
+ITP proof remapped roots: 1513 - eq nodes: 0 - tot: 13574
+ROOT stats - zero: 0 - one: 0 - lit: 303 - clause: 1020
+ITP proof core: (root: 1488,0 + chain: 12061 (res: 89959) - ref2: 9244) / tot:13574
+ITP proof dupv: 0 - implNodesOdc: 9473
+ITP proof core: (root: 1488,0 + chain: 12061 (res: 80486) - ref2: 9244) / tot:13574
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:191]: 68640 -> 63084
+TOT NNF SIMPL: 63084 -> (abcBal: 35683) -> 34844 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 34844
+
+NNF PBA Solver time = 2.40 s (norm 2.56 s))
+NNF PBA Solver stats: 246505/34108666/17993 dec./prop./confl.
+NNF PBA Solver Validation time = 3.27 s (norm 3.48 s))
+# AIG core -> gates: 19861 / 34959 (maxCut: 0)
+NNF PBA size: 34844 -> 19727
+# A cl: 11824/42237
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 500069
+itp stats: clause terms/a/o/ao -> 30763/0/0/30763 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:138]: 19727 -> 19713
+TOT NNF SIMPL: 19713 -> (abcBal: 19040) -> 18902 (1 iterations)
+ABC / nnf simp: 13285/18902
+itp opt: 18902 -> 18902
+60/134 (r:74) INDUCTIVE components found in TO+ (size: 17683)
+|to simplify: 18902->17683|.
+TO: 17683 (supp: 252) - AIG nodes 498097
+TO*TO+: 20648 (supp: 259)
+|to:20648|.
+   |tr|=16212 |reached|=110939.
+*** Trav time: 539.71 s (norm 573.71 s) ***
+ring 19 - safe for bound 11
+  Reusing SAME CONE ring
+fp chkTime: 1.06 s (norm 1.13 s)
+  Aig interpolant inner iteration 19: |from:36560| -> ternary to+: 11
+TO+IMG-cube: 6 (f:36560->36548)
+min/avg/max red id: 1444/16584/20481
+FOUND 133 const REDUNDANCIES
+red size: 12934 - F size 20549 -> 20549
+taking cone[19/31] of size: 105700 - bound: 11
+DYN ABSTR (M22) KEPT 257/927 vars (time: 11.83 s (norm 12.58 s))
+computing interpolant in TO+
+ITP (|A|=27417,|B|=126250)
+ITP time limit: 10000
+Solver stats: 153410/272919 vars/clauses (elim v/cl:0/0)
+Solver stats: 141944/111497232/51043 dec./prop./confl.
+Solver stats: time = 9.49 s (norm 10.09 s)
+Solver Validation time = 12.51 s (norm 13.30 s) - prop:299505298
+Solver Replay time = 6.41 s (norm 6.81 s) - prop: 364356259
+computing interpolant from refutation proof of size 51144 (AIG nodes: 506979)
+RES PROOF REMOVED 94669 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 115283 resolutions
+RESTRUCT PROOF REMOVED 19178 redundant resolutions
+RES PROOF PROCESSED: 8199 A, 33979 B, 447 resA, 20392 resB, 20148 res (tot: 83165)
+RES PROOF has 65441 core and 17724 out of core nodes
+RES PROOF compacted from 83165 to 65402 nodes
+RES PROOF SWAPPED 1532 resolution vars
+resB: 0
+GET PROOF 8165 A (0 resA) - 37128 B (0 resB) - 20109 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 20109 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 8165 A (0 resA) - 37128 B (0 resB) - 20109 res - 0 red
+# A cl: 8165/45293
+ITP proof core: (root: 44749,546 + chain: 19389 (res: 2070465) - ref2: 13721) / tot:65404
+ITP proof remapped roots: 342 - eq nodes: 7135 - tot: 12596
+ROOT stats - zero: 7734 - one: 36673 - lit: 340 - clause: 0
+ITP proof core: (root: 342,0 + chain: 12254 (res: 58323) - ref2: 9170) / tot:12596
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 342,0 + chain: 12254 (res: 58323) - ref2: 9170) / tot:12596
+ITP proof remapped roots: 928 - eq nodes: 1229 - tot: 11626
+ROOT stats - zero: 0 - one: 0 - lit: 340 - clause: 0
+ITP proof core: (root: 926,0 + chain: 10698 (res: 51221) - ref2: 8115) / tot:11626
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 926,0 + chain: 10698 (res: 51221) - ref2: 8115) / tot:11626
+ITP proof remapped roots: 1079 - eq nodes: 9 - tot: 11630
+ROOT stats - zero: 0 - one: 0 - lit: 338 - clause: 586
+ITP proof core: (root: 1041,0 + chain: 10551 (res: 50017) - ref2: 8016) / tot:11630
+ITP proof dupv: 0 - implNodesOdc: 3906
+ITP proof core: (root: 1041,0 + chain: 10551 (res: 46111) - ref2: 8016) / tot:11630
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:352]: 37516 -> 30016
+TOT NNF SIMPL: 30016 -> (abcBal: 17629) -> 17096 (1 iterations)
+RERUN PARTIAL ITP SIZE: 17096 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 1.73 s (norm 1.83 s))
+Solver RERUN1 stats: 153410/45293 vars/clauses
+RERUN1 proof has size size 30458
+Solver RERUN1 stats: 139189/17915915/21842 dec./prop./confl.
+
+CHECK Solver Validation time = 2.24 s (norm 2.38 s))
+RERUN Solver Replay time = 2.37 s (norm 2.52 s))
+RERUN Solver res: 53257 - resolvents: 20461
+# A cl: 5312/32692
+ITP proof core: (root: 32551,143 + chain: 9566 (res: 991168) - ref2: 7110) / tot:42978
+ITP proof remapped roots: 272 - eq nodes: 3483 - tot: 6355
+ROOT stats - zero: 4948 - one: 27331 - lit: 269 - clause: 1
+ITP proof core: (root: 272,0 + chain: 6083 (res: 36137) - ref2: 4665) / tot:6355
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 272,0 + chain: 6083 (res: 36137) - ref2: 4665) / tot:6355
+ITP proof remapped roots: 723 - eq nodes: 702 - tot: 5811
+ROOT stats - zero: 0 - one: 0 - lit: 269 - clause: 1
+ITP proof core: (root: 720,0 + chain: 5088 (res: 30393) - ref2: 3962) / tot:5811
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 720,0 + chain: 5088 (res: 30393) - ref2: 3962) / tot:5811
+ITP proof remapped roots: 797 - eq nodes: 1 - tot: 5807
+ROOT stats - zero: 0 - one: 0 - lit: 267 - clause: 451
+ITP proof core: (root: 769,0 + chain: 5010 (res: 29722) - ref2: 3906) / tot:5807
+ITP proof dupv: 0 - implNodesOdc: 6140
+ITP proof core: (root: 769,0 + chain: 5010 (res: 23582) - ref2: 3906) / tot:5807
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:199]: 20476 -> 18382
+TOT NNF SIMPL: 18382 -> (abcBal: 10525) -> 10279 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 10279
+
+NNF PBA Solver time = 1.14 s (norm 1.21 s))
+NNF PBA Solver stats: 129742/12861551/14084 dec./prop./confl.
+NNF PBA Solver Validation time = 1.49 s (norm 1.59 s))
+# AIG core -> gates: 6426 / 10338 (maxCut: 0)
+NNF PBA size: 10279 -> 6371
+# A cl: 8165/45293
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 512198
+itp stats: clause terms/a/o/ao -> 15561/0/0/15561 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:117]: 6371 -> 6370
+TOT NNF SIMPL: 6370 -> (abcBal: 6165) -> 6130 (1 iterations)
+ABC / nnf simp: 4114/6130
+itp opt: 6130 -> 6130
+42/113 (r:71) INDUCTIVE components found in TO+ (size: 5475)
+|to simplify: 6130->5475|.
+TO: 5475 (supp: 230) - AIG nodes 511366
+TO*TO+: 14013 (supp: 264)
+|to:14013|.
+   |tr|=16212 |reached|=122980.
+*** Trav time: 607.05 s (norm 645.30 s) ***
+ring 20 - safe for bound 11
+  Reusing SAME CONE ring
+fp chkTime: 1.40 s (norm 1.48 s)
+  Aig interpolant inner iteration 20: |from:29918| -> ternary to+: 11
+TO+IMG-cube: 6 (f:29918->29906)
+min/avg/max red id: 804/10368/13728
+FOUND 125 const REDUNDANCIES
+red size: 10130 - F size 13865 -> 13865
+taking cone[20/32] of size: 105700 - bound: 11
+DYN ABSTR (M22) KEPT 248/927 vars (time: 9.87 s (norm 10.49 s))
+computing interpolant in TO+
+ITP (|A|=20663,|B|=122394)
+ITP time limit: 10000
+Solver stats: 142809/253716 vars/clauses (elim v/cl:0/0)
+Solver stats: 180190/128372439/61760 dec./prop./confl.
+Solver stats: time = 11.64 s (norm 12.38 s)
+Solver Validation time = 14.39 s (norm 15.30 s) - prop:348736247
+Solver Replay time = 8.77 s (norm 9.32 s) - prop: 437251912
+computing interpolant from refutation proof of size 88502 (AIG nodes: 511589)
+RES PROOF REMOVED 144607 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 175887 resolutions
+RESTRUCT PROOF REMOVED 28468 redundant resolutions
+RES PROOF PROCESSED: 5713 A, 35170 B, 305 resA, 23358 resB, 27408 res (tot: 91954)
+RES PROOF has 73032 core and 18922 out of core nodes
+RES PROOF compacted from 91954 to 73004 nodes
+RES PROOF SWAPPED 2001 resolution vars
+resB: 0
+GET PROOF 5545 A (0 resA) - 40079 B (0 resB) - 27380 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 27380 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 5545 A (0 resA) - 40079 B (0 resB) - 27380 res - 0 red
+# A cl: 5545/45624
+ITP proof core: (root: 45313,313 + chain: 26529 (res: 3507785) - ref2: 18606) / tot:73006
+ITP proof remapped roots: 319 - eq nodes: 8365 - tot: 18483
+ROOT stats - zero: 5154 - one: 39840 - lit: 317 - clause: 0
+ITP proof core: (root: 319,0 + chain: 18164 (res: 88217) - ref2: 13524) / tot:18483
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 319,0 + chain: 18164 (res: 88217) - ref2: 13524) / tot:18483
+ITP proof remapped roots: 935 - eq nodes: 1340 - tot: 17426
+ROOT stats - zero: 0 - one: 0 - lit: 317 - clause: 0
+ITP proof core: (root: 925,0 + chain: 16491 (res: 79935) - ref2: 12395) / tot:17426
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 925,0 + chain: 16491 (res: 79935) - ref2: 12395) / tot:17426
+ITP proof remapped roots: 1163 - eq nodes: 1 - tot: 17491
+ROOT stats - zero: 0 - one: 0 - lit: 310 - clause: 613
+ITP proof core: (root: 1121,0 + chain: 16328 (res: 78109) - ref2: 12291) / tot:17491
+ITP proof dupv: 0 - implNodesOdc: 8880
+ITP proof core: (root: 1121,0 + chain: 16328 (res: 69229) - ref2: 12292) / tot:17491
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:537]: 57209 -> 34903
+TOT NNF SIMPL: 34903 -> (abcBal: 20991) -> 20318 (1 iterations)
+RERUN PARTIAL ITP SIZE: 20318 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 2.55 s (norm 2.71 s))
+Solver RERUN1 stats: 142809/45623 vars/clauses
+RERUN1 proof has size size 27736
+Solver RERUN1 stats: 226780/25331405/27205 dec./prop./confl.
+
+CHECK Solver Validation time = 3.43 s (norm 3.65 s))
+RERUN Solver Replay time = 3.63 s (norm 3.86 s))
+RERUN Solver res: 59668 - resolvents: 25906
+# A cl: 4293/35193
+ITP proof core: (root: 35020,175 + chain: 16529 (res: 1917735) - ref2: 12173) / tot:52229
+ITP proof remapped roots: 268 - eq nodes: 5512 - tot: 11285
+ROOT stats - zero: 3986 - one: 30766 - lit: 265 - clause: 1
+ITP proof core: (root: 268,0 + chain: 11017 (res: 53769) - ref2: 8556) / tot:11285
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 268,0 + chain: 11017 (res: 53769) - ref2: 8556) / tot:11285
+ITP proof remapped roots: 879 - eq nodes: 685 - tot: 10835
+ROOT stats - zero: 0 - one: 0 - lit: 265 - clause: 1
+ITP proof core: (root: 873,0 + chain: 9956 (res: 47064) - ref2: 7801) / tot:10835
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 873,0 + chain: 9956 (res: 47064) - ref2: 7801) / tot:10835
+ITP proof remapped roots: 1089 - eq nodes: 0 - tot: 10882
+ROOT stats - zero: 0 - one: 0 - lit: 261 - clause: 610
+ITP proof core: (root: 1045,0 + chain: 9793 (res: 44837) - ref2: 7689) / tot:10882
+ITP proof dupv: 0 - implNodesOdc: 3056
+ITP proof core: (root: 1045,0 + chain: 9793 (res: 41781) - ref2: 7689) / tot:10882
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:387]: 34274 -> 25207
+TOT NNF SIMPL: 25207 -> (abcBal: 14812) -> 14393 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 14393
+
+NNF PBA Solver time = 1.79 s (norm 1.90 s))
+NNF PBA Solver stats: 118934/20942828/18304 dec./prop./confl.
+NNF PBA Solver Validation time = 2.50 s (norm 2.66 s))
+# AIG core -> gates: 7665 / 14470 (maxCut: 0)
+NNF PBA size: 14393 -> 7599
+# A cl: 5545/45624
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 517915
+itp stats: clause terms/a/o/ao -> 26121/0/0/26121 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:192]: 7599 -> 7584
+TOT NNF SIMPL: 7584 -> (abcBal: 7256) -> 7194 (1 iterations)
+ABC / nnf simp: 4854/7194
+itp opt: 7194 -> 7194
+72/182 (r:110) INDUCTIVE components found in TO+ (size: 6389)
+|to simplify: 7194->6389|.
+TO: 6389 (supp: 227) - AIG nodes 516803
+TO*TO+: 14634 (supp: 262)
+|to:14634|.
+   |tr|=16212 |reached|=134824.
+*** Trav time: 683.89 s (norm 726.98 s) ***
+ring 21 - safe for bound 11
+  Reusing SAME CONE ring
+fp chkTime: 1.84 s (norm 1.96 s)
+  Aig interpolant inner iteration 21: |from:30538| -> ternary to+: 11
+TO+IMG-cube: 6 (f:30538->30526)
+min/avg/max red id: 1285/10312/14443
+FOUND 172 const REDUNDANCIES
+red size: 12121 - F size 14450 -> 14450
+taking cone[21/33] of size: 105700 - bound: 11
+DYN ABSTR (M22) KEPT 216/927 vars (time: 10.13 s (norm 10.77 s))
+computing interpolant in TO+
+ITP (|A|=20880,|B|=126116)
+ITP time limit: 10000
+Solver stats: 146780/261812 vars/clauses (elim v/cl:0/0)
+Solver stats: 156985/105150103/50815 dec./prop./confl.
+Solver stats: time = 8.83 s (norm 9.38 s)
+Solver Validation time = 10.95 s (norm 11.64 s) - prop:276218488
+Solver Replay time = 5.91 s (norm 6.28 s) - prop: 336783242
+computing interpolant from refutation proof of size 70705 (AIG nodes: 525743)
+RES PROOF REMOVED 81639 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 102854 resolutions
+RESTRUCT PROOF REMOVED 18010 redundant resolutions
+RES PROOF PROCESSED: 4211 A, 35161 B, 110 resA, 26520 resB, 12930 res (tot: 78932)
+RES PROOF has 50718 core and 28214 out of core nodes
+RES PROOF compacted from 78932 to 50700 nodes
+RES PROOF SWAPPED 379 resolution vars
+resB: 0
+GET PROOF 4074 A (0 resA) - 33714 B (0 resB) - 12912 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 12912 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 4074 A (0 resA) - 33714 B (0 resB) - 12912 res - 0 red
+# A cl: 4074/37788
+ITP proof core: (root: 37322,468 + chain: 12287 (res: 1184486) - ref2: 8778) / tot:50702
+ITP proof remapped roots: 256 - eq nodes: 4550 - tot: 7993
+ROOT stats - zero: 3736 - one: 33330 - lit: 254 - clause: 0
+ITP proof core: (root: 256,0 + chain: 7737 (res: 29726) - ref2: 5541) / tot:7993
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 256,0 + chain: 7737 (res: 29726) - ref2: 5541) / tot:7993
+ITP proof remapped roots: 446 - eq nodes: 3860 - tot: 4228
+ROOT stats - zero: 0 - one: 0 - lit: 254 - clause: 0
+ITP proof core: (root: 431,0 + chain: 3782 (res: 17305) - ref2: 2938) / tot:4228
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 431,0 + chain: 3782 (res: 17305) - ref2: 2938) / tot:4228
+ITP proof remapped roots: 484 - eq nodes: 2 - tot: 4197
+ROOT stats - zero: 0 - one: 0 - lit: 241 - clause: 188
+ITP proof core: (root: 458,0 + chain: 3713 (res: 17021) - ref2: 2891) / tot:4197
+ITP proof dupv: 0 - implNodesOdc: 5799
+ITP proof core: (root: 458,0 + chain: 3713 (res: 11222) - ref2: 2891) / tot:4197
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:118]: 8638 -> 7000
+TOT NNF SIMPL: 7000 -> (abcBal: 5004) -> 4878 (1 iterations)
+RERUN PARTIAL ITP SIZE: 4878 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.93 s (norm 0.99 s))
+Solver RERUN1 stats: 146780/37788 vars/clauses
+RERUN1 proof has size size 15021
+Solver RERUN1 stats: 204475/10120154/12523 dec./prop./confl.
+
+CHECK Solver Validation time = 1.25 s (norm 1.33 s))
+RERUN Solver Replay time = 1.33 s (norm 1.42 s))
+RERUN Solver res: 39124 - resolvents: 11754
+# A cl: 2683/19239
+ITP proof core: (root: 19075,166 + chain: 2201 (res: 242914) - ref2: 1595) / tot:21625
+ITP proof remapped roots: 207 - eq nodes: 964 - tot: 1444
+ROOT stats - zero: 2387 - one: 16481 - lit: 205 - clause: 0
+ITP proof core: (root: 207,0 + chain: 1237 (res: 7465) - ref2: 933) / tot:1444
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 207,0 + chain: 1237 (res: 7465) - ref2: 933) / tot:1444
+ITP proof remapped roots: 335 - eq nodes: 142 - tot: 1356
+ROOT stats - zero: 0 - one: 0 - lit: 205 - clause: 0
+ITP proof core: (root: 329,0 + chain: 1021 (res: 6083) - ref2: 781) / tot:1356
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 329,0 + chain: 1021 (res: 6083) - ref2: 781) / tot:1356
+ITP proof remapped roots: 359 - eq nodes: 18 - tot: 1328
+ROOT stats - zero: 0 - one: 0 - lit: 200 - clause: 127
+ITP proof core: (root: 346,0 + chain: 969 (res: 5951) - ref2: 747) / tot:1328
+ITP proof dupv: 0 - implNodesOdc: 1661
+ITP proof core: (root: 346,0 + chain: 969 (res: 4290) - ref2: 747) / tot:1328
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:58]: 4355 -> 4113
+TOT NNF SIMPL: 4113 -> (abcBal: 2857) -> 2785 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 2785
+
+NNF PBA Solver time = 0.18 s (norm 0.19 s))
+NNF PBA Solver stats: 112616/2086450/3286 dec./prop./confl.
+NNF PBA Solver Validation time = 0.23 s (norm 0.24 s))
+# AIG core -> gates: 2053 / 2832 (maxCut: 0)
+NNF PBA size: 2785 -> 2015
+# A cl: 4074/37788
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 527183
+itp stats: clause terms/a/o/ao -> 4682/0/0/4682 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:27]: 2015 -> 2015
+TOT NNF SIMPL: 2015 -> (abcBal: 1985) -> 1959 (1 iterations)
+ABC / nnf simp: 1500/1959
+itp opt: 1959 -> 1959
+18/26 (r:8) INDUCTIVE components found in TO+ (size: 1904)
+|to simplify: 1959->1904|.
+TO: 1904 (supp: 183) - AIG nodes 527103
+TO*TO+: 12140 (supp: 260)
+|to:12140|.
+   |tr|=16212 |reached|=144416.
+*** Trav time: 737.76 s (norm 784.24 s) ***
+ring 22 - safe for bound 11
+  Reusing SAME CONE ring
+fp chkTime: 6.90 s (norm 7.34 s)
+  Aig interpolant inner iteration 22: |from:28049| -> ternary to+: 11
+TO+IMG-cube: 6 (f:28049->28037)
+min/avg/max red id: 740/8132/11958
+FOUND 138 const REDUNDANCIES
+red size: 10568 - F size 11981 -> 11981
+taking cone[22/34] of size: 105700 - bound: 11
+DYN ABSTR (M22) KEPT 205/927 vars (time: 6.81 s (norm 7.24 s))
+computing interpolant in TO+
+ITP (|A|=18255,|B|=123665)
+ITP time limit: 10000
+Solver stats: 141715/252569 vars/clauses (elim v/cl:0/0)
+Solver stats: 162080/93722489/48576 dec./prop./confl.
+Solver stats: time = 7.78 s (norm 8.27 s)
+Solver Validation time = 9.84 s (norm 10.46 s) - prop:251310206
+Solver Replay time = 5.42 s (norm 5.76 s) - prop: 308702495
+computing interpolant from refutation proof of size 80330 (AIG nodes: 531967)
+RES PROOF REMOVED 82873 redundant  literals
+RES PROOF RECYCL PIV. REMOVED 101857 resolutions
+RESTRUCT PROOF REMOVED 20963 redundant resolutions
+RES PROOF PROCESSED: 3601 A, 33680 B, 94 resA, 31019 resB, 9719 res (tot: 78113)
+RES PROOF has 46852 core and 31261 out of core nodes
+RES PROOF compacted from 78113 to 46839 nodes
+RES PROOF SWAPPED 937 resolution vars
+resB: 0
+GET PROOF 3470 A (0 resA) - 33663 B (0 resB) - 9706 res - 0 red
+RES PROOF (noop) MOVED from (A:0+B:0) 0 B->A: 0 resA, 0 resB, 9706 res, 0 redundant (red root: 0)
+resB: 0
+GET PROOF 3470 A (0 resA) - 33663 B (0 resB) - 9706 res - 0 red
+# A cl: 3470/37133
+ITP proof core: (root: 36480,655 + chain: 8291 (res: 1015776) - ref2: 5951) / tot:46841
+ITP proof remapped roots: 242 - eq nodes: 3923 - tot: 4610
+ROOT stats - zero: 3120 - one: 33118 - lit: 239 - clause: 1
+ITP proof core: (root: 242,0 + chain: 4368 (res: 14653) - ref2: 3209) / tot:4610
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 242,0 + chain: 4368 (res: 14653) - ref2: 3209) / tot:4610
+ITP proof remapped roots: 387 - eq nodes: 1299 - tot: 3367
+ROOT stats - zero: 0 - one: 0 - lit: 239 - clause: 1
+ITP proof core: (root: 384,0 + chain: 2980 (res: 10943) - ref2: 2211) / tot:3367
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 384,0 + chain: 2980 (res: 10943) - ref2: 2211) / tot:3367
+ITP proof remapped roots: 423 - eq nodes: 2 - tot: 3336
+ROOT stats - zero: 0 - one: 0 - lit: 237 - clause: 145
+ITP proof core: (root: 403,0 + chain: 2913 (res: 10586) - ref2: 2170) / tot:3336
+ITP proof dupv: 0 - implNodesOdc: 1394
+ITP proof core: (root: 403,0 + chain: 2913 (res: 9192) - ref2: 2170) / tot:3336
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:117]: 7238 -> 5269
+TOT NNF SIMPL: 5269 -> (abcBal: 3828) -> 3709 (1 iterations)
+RERUN PARTIAL ITP SIZE: 3709 - 0 auxv used
+
+Solver RERUN1 with partial itp time = 0.65 s (norm 0.69 s))
+Solver RERUN1 stats: 141715/37126 vars/clauses
+RERUN1 proof has size size 12102
+Solver RERUN1 stats: 181442/7218301/8954 dec./prop./confl.
+
+CHECK Solver Validation time = 0.86 s (norm 0.91 s))
+RERUN Solver Replay time = 0.92 s (norm 0.98 s))
+RERUN Solver res: 36333 - resolvents: 8625
+# A cl: 2546/15030
+ITP proof core: (root: 14856,176 + chain: 1334 (res: 134063) - ref2: 969) / tot:16800
+ITP proof remapped roots: 207 - eq nodes: 523 - tot: 1018
+ROOT stats - zero: 2256 - one: 12393 - lit: 204 - clause: 1
+ITP proof core: (root: 207,0 + chain: 811 (res: 4381) - ref2: 609) / tot:1018
+ITP proof red Simpl (impl: 0): 0
+ITP proof core: (root: 207,0 + chain: 811 (res: 4381) - ref2: 609) / tot:1018
+ITP proof remapped roots: 310 - eq nodes: 166 - tot: 895
+ROOT stats - zero: 0 - one: 0 - lit: 204 - clause: 1
+ITP proof core: (root: 298,0 + chain: 585 (res: 3206) - ref2: 455) / tot:895
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+ITP proof core: (root: 298,0 + chain: 585 (res: 3206) - ref2: 455) / tot:895
+ITP proof remapped roots: 322 - eq nodes: 0 - tot: 893
+ROOT stats - zero: 0 - one: 0 - lit: 194 - clause: 102
+ITP proof core: (root: 312,0 + chain: 571 (res: 3146) - ref2: 446) / tot:893
+ITP proof dupv: 0 - implNodesOdc: 457
+ITP proof core: (root: 312,0 + chain: 571 (res: 2689) - ref2: 446) / tot:893
+ITP proof dupv: 0 [impl: 0] - implNodes: 0
+STRUCT ODC[AND:19]: 2831 -> 2753
+TOT NNF SIMPL: 2753 -> (abcBal: 2104) -> 2032 (1 iterations)
+RERUN PARTIAL ITP2 SIZE: 2032
+
+NNF PBA Solver time = 0.11 s (norm 0.12 s))
+NNF PBA Solver stats: 86350/1256329/2284 dec./prop./confl.
+NNF PBA Solver Validation time = 0.12 s (norm 0.13 s))
+# AIG core -> gates: 1767 / 2081 (maxCut: 0)
+NNF PBA size: 2032 -> 1722
+# A cl: 3470/37133
+interpolant OPT: 0 (0,0)
+interpolant AUXV: 0 - AIG nodes 533169
+itp stats: clause terms/a/o/ao -> 3484/0/0/3484 - A nodes: 0 (and->or): 32766
+STRUCT ODC[AND:13]: 1722 -> 1722
+TOT NNF SIMPL: 1722 -> (abcBal: 1703) -> 1689 (1 iterations)
+ABC / nnf simp: 1425/1689
+itp opt: 1689 -> 1689
+9/13 (r:4) INDUCTIVE components found in TO+ (size: 1674)
+|to simplify: 1689->1674|.
+TO: 1674 (supp: 180) - AIG nodes 533133
+TO*TO+: 11548 (supp: 260)
+|to:11548|.
+   |tr|=16212 |reached|=152933.
+*** Trav time: 805.90 s (norm 856.67 s) ***
+ring 23 - safe for bound 11
+  Reusing SAME CONE ring
+FWD ITP fix-point at depth 23
+BWD fix point at bound 0.
+Lazy Pass at Depth 0.
+-- TRAV Manager Quit.
+Verification Result: PASS.
+Result Written to File oc8051gm3bacc.pdtrav.out.
+-- FSM Manager Quit.
+-- FSM Manager Quit.
+Total used memory: 43.72 MBytes
+Total Verification Time: 815.71 s (norm 867.10 s)
+-- DDI Manager Quit.
+Total Execution Time: 816.28 s (norm 867.71 s)
+## PdTRAV End.
